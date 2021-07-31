@@ -1,0 +1,21 @@
+[17:17:23] alt:V Server 5.3 (release)
+[17:17:23] Starting alt:V Server on 0.0.0.0:7788
+[17:17:23] Loading resource chat
+[17:17:23] Loaded resource chat
+[17:17:23] Loading resource freeroam
+[17:17:23] Loaded resource freeroam
+[17:17:23] Required server permissions:
+[17:17:23] Optional server permissions:
+[17:17:23] Starting HTTP server on 0.0.0.0:7788
+[17:17:23] Main thread started (ThreadId: 14912)
+[17:17:23] Colshape thread started (ThreadId: 13660)
+[17:17:23] EntityStreamer thread started (ThreadId: 12484)
+[17:17:23] Console thread started (ThreadId: 10136)
+[17:17:23] Network thread started (ThreadId: 17040)
+[17:17:23] Server started
+[17:17:39] [chat:cmd] Player: /help
+[17:17:55] Stopping resource chat
+[17:17:55] Stopping resource freeroam
+[17:17:55] Stopped resource freeroam
+[17:17:55] Stopped resource chat
+[17:17:55] Server shutdown
