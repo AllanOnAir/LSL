@@ -1,21 +1,35 @@
-[17:17:23] alt:V Server 5.3 (release)
-[17:17:23] Starting alt:V Server on 0.0.0.0:7788
-[17:17:23] Loading resource chat
-[17:17:23] Loaded resource chat
-[17:17:23] Loading resource freeroam
-[17:17:23] Loaded resource freeroam
-[17:17:23] Required server permissions:
-[17:17:23] Optional server permissions:
-[17:17:23] Starting HTTP server on 0.0.0.0:7788
-[17:17:23] Main thread started (ThreadId: 14912)
-[17:17:23] Colshape thread started (ThreadId: 13660)
-[17:17:23] EntityStreamer thread started (ThreadId: 12484)
-[17:17:23] Console thread started (ThreadId: 10136)
-[17:17:23] Network thread started (ThreadId: 17040)
-[17:17:23] Server started
-[17:17:39] [chat:cmd] Player: /help
-[17:17:55] Stopping resource chat
-[17:17:55] Stopping resource freeroam
-[17:17:55] Stopped resource freeroam
-[17:17:55] Stopped resource chat
-[17:17:55] Server shutdown
+[17:48:16] alt:V Server 5.3 (release)
+[17:48:16] Starting LSL DEV on 0.0.0.0:7788
+[17:48:16] Loading resource chat
+[17:48:16] Loaded resource chat
+[17:48:16] Loading resource freeroam
+[17:48:16] Loaded resource freeroam
+[17:48:16] Loading resource voice
+[17:48:16] Loaded resource voice
+[17:48:16] Loading resource gabz_mrpd
+[17:48:16] Loaded resource gabz_mrpd
+[17:48:16] Loading resource gabz_mrpdloader
+[17:48:16] Loaded resource gabz_mrpdloader
+[17:48:16] Required server permissions:
+[17:48:16] Optional server permissions:
+[17:48:16] Starting HTTP server on 0.0.0.0:7788
+[17:48:16] Main thread started (ThreadId: 13808)
+[17:48:16] VoiceStreamer thread started (ThreadId: 5784)
+[17:48:16] VoicePacketProcess thread started (ThreadId: 11948)
+[17:48:16] Colshape thread started (ThreadId: 1320)
+[17:48:16] EntityStreamer thread started (ThreadId: 9044)
+[17:48:16] Network thread started (ThreadId: 17972)
+[17:48:16] Console thread started (ThreadId: 17076)
+[17:48:16] Server started
+[17:50:30] [chat:cmd] Player: /veh nero
+[17:55:15] Stopping resource chat
+[17:55:15] Stopping resource freeroam
+[17:55:15] Stopped resource freeroam
+[17:55:15] Stopping resource voice
+[17:55:15] Stopped resource voice
+[17:55:15] Stopped resource chat
+[17:55:15] Stopping resource gabz_mrpd
+[17:55:15] Stopped resource gabz_mrpd
+[17:55:15] Stopping resource gabz_mrpdloader
+[17:55:15] Stopped resource gabz_mrpdloader
+[17:55:15] Server shutdown
