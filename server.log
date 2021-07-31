@@ -1,35 +1,43 @@
-[17:48:16] alt:V Server 5.3 (release)
-[17:48:16] Starting LSL DEV on 0.0.0.0:7788
-[17:48:16] Loading resource chat
-[17:48:16] Loaded resource chat
-[17:48:16] Loading resource freeroam
-[17:48:16] Loaded resource freeroam
-[17:48:16] Loading resource voice
-[17:48:16] Loaded resource voice
-[17:48:16] Loading resource gabz_mrpd
-[17:48:16] Loaded resource gabz_mrpd
-[17:48:16] Loading resource gabz_mrpdloader
-[17:48:16] Loaded resource gabz_mrpdloader
-[17:48:16] Required server permissions:
-[17:48:16] Optional server permissions:
-[17:48:16] Starting HTTP server on 0.0.0.0:7788
-[17:48:16] Main thread started (ThreadId: 13808)
-[17:48:16] VoiceStreamer thread started (ThreadId: 5784)
-[17:48:16] VoicePacketProcess thread started (ThreadId: 11948)
-[17:48:16] Colshape thread started (ThreadId: 1320)
-[17:48:16] EntityStreamer thread started (ThreadId: 9044)
-[17:48:16] Network thread started (ThreadId: 17972)
-[17:48:16] Console thread started (ThreadId: 17076)
-[17:48:16] Server started
-[17:50:30] [chat:cmd] Player: /veh nero
-[17:55:15] Stopping resource chat
-[17:55:15] Stopping resource freeroam
-[17:55:15] Stopped resource freeroam
-[17:55:15] Stopping resource voice
-[17:55:15] Stopped resource voice
-[17:55:15] Stopped resource chat
-[17:55:15] Stopping resource gabz_mrpd
-[17:55:15] Stopped resource gabz_mrpd
-[17:55:15] Stopping resource gabz_mrpdloader
-[17:55:15] Stopped resource gabz_mrpdloader
-[17:55:15] Server shutdown
+[18:25:19] alt:V Server 5.3 (release)
+[18:25:19] Starting LSL DEV on 0.0.0.0:7788
+[18:25:19] Loading resource chat
+[18:25:19] Loaded resource chat
+[18:25:19] Loading resource freeroam
+[18:25:19] Loaded resource freeroam
+[18:25:19] Loading resource voice
+[18:25:20] Loaded resource voice
+[18:25:20] Loading resource gabz_mrpd
+[18:25:20] Loaded resource gabz_mrpd
+[18:25:20] Loading resource gabz_mrpdloader
+[18:25:20] Loaded resource gabz_mrpdloader
+[18:25:20] Required server permissions:
+[18:25:20] Optional server permissions:
+[18:25:20] Starting HTTP server on 0.0.0.0:7788
+[18:25:20] Main thread started (ThreadId: 13848)
+[18:25:20] VoicePacketProcess thread started (ThreadId: 19176)
+[18:25:20] Colshape thread started (ThreadId: 3924)
+[18:25:20] VoiceStreamer thread started (ThreadId: 15796)
+[18:25:20] EntityStreamer thread started (ThreadId: 10032)
+[18:25:20] Network thread started (ThreadId: 14176)
+[18:25:20] Console thread started (ThreadId: 12688)
+[18:25:20] Server started
+[18:25:48] [chat:cmd] Player: /car nero
+[18:26:44] [chat:cmd] Player: /help
+[18:28:29] [chat:cmd] Player: /pos
+[18:28:29] Position: 91.34505462646484, -1032.22412109375, 29.4483642578125
+[18:29:00] [chat:cmd] Player: /pos
+[18:29:00] Position: 410.9010925292969, -983.5516357421875, 29.2630615234375
+[18:29:05] [chat:cmd] Player: /pos
+[18:29:05] Position: 414.1186828613281, -985.2263793945312, 29.4146728515625
+[18:30:02][Warning] resourceManager.Update() took: 54 ms
+[18:30:05] Stopping resource chat
+[18:30:05] Stopping resource freeroam
+[18:30:05] Stopped resource freeroam
+[18:30:05] Stopping resource voice
+[18:30:05] Stopped resource voice
+[18:30:05] Stopped resource chat
+[18:30:05] Stopping resource gabz_mrpd
+[18:30:05] Stopped resource gabz_mrpd
+[18:30:05] Stopping resource gabz_mrpdloader
+[18:30:05] Stopped resource gabz_mrpdloader
+[18:30:06] Server shutdown

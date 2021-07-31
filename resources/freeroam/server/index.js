@@ -2,15 +2,10 @@ import * as alt from "alt-server";
 import * as chat from "chat";
 
 const spawns = [
-  { x: -695.1956176757812, y: 83.94725036621094, z: 55.85205078125 },
-  { x: -527.6835327148438, y: -678.7252807617188, z: 33.6607666015625 },
-  { x: 200.6637420654297, y: -935.2879028320312, z: 30.6783447265625 },
-  { x: 897.7318725585938, y: -1054.6944580078125, z: 32.818359375 },
-  { x: 363.1516418457031, y: -2123.156005859375, z: 16.052734375 },
-  { x: -265.3582458496094, y: -1898.0703125, z: 27.7464599609375 },
+  { X: 414.118, Y: --985.226, Z:29.4146 },
 ];
 
-const spawnModels = ["u_m_y_mani", "csb_mweather", "hc_driver", "mp_m_weapexp_01"];
+const spawnModels = ["a_m_m_malibu_01"];
 
 const weapons = [
   "dagger",
@@ -127,8 +122,6 @@ alt.on("playerConnect", (player) => {
   let connectTimeout = alt.setTimeout(() => {
     if (player && player.valid) {
       const playerCount = alt.Player.all.length;
-      chat.broadcast(`{1cacd4}${player.name} {ffffff}has {00ff00}joined {ffffff}the Server..  (${playerCount} players online)`);
-      chat.send(player, "{80eb34}Press {34dfeb}T {80eb34}and type {34dfeb}/help {80eb34}to see all available commands..");
     }
     alt.clearTimeout(connectTimeout);
   }, 1000);
@@ -178,17 +171,15 @@ alt.on("playerDisconnect", (player, reason) => {
 
 chat.registerCmd("help", (player, args) => {
   chat.send(player, "{ff0000}========== {eb4034}HELP {ff0000} ==========");
-  chat.send(player, "{ff0000}= {34abeb}/veh {40eb34}(model)   {ffffff} Spawn a Vehicle");
-  chat.send(player, "{ff0000}= {34abeb}/tp {40eb34}(targetPlayer)   {ffffff} Teleport to Player");
-  chat.send(player, "{ff0000}= {34abeb}/model {40eb34}(modelName)   {ffffff} Change Player Model");
-  chat.send(player, "{ff0000}= {34abeb}/weapon {40eb34}(weaponName)   {ffffff} Get specified weapon");
-  chat.send(player, "{ff0000}= {34abeb}/weapons    {ffffff} Get all weapons");
+  chat.send(player, "{ff0000}= {34abeb}/car {40eb34}(model)   {ffffff} Spawn une Voiture.");
+  chat.send(player, "{ff0000}= {34abeb}/tp {40eb34}(targetPlayer)   {ffffff} Vous téleporte as un joueur.");
+  chat.send(player, "{ff0000}= {34abeb}/weapon {40eb34}(weaponName)   {ffffff} vous donne l'arme.");
   chat.send(player, "{ff0000} ========================");
 });
 
-chat.registerCmd("veh", (player, args) => {
+chat.registerCmd("car", (player, args) => {
   if (args.length === 0) {
-    chat.send(player, "Usage: /veh (vehicleModel)");
+    chat.send(player, "Usage: /car (vehicleModel)");
     return;
   }
   try {
@@ -203,7 +194,7 @@ chat.registerCmd("veh", (player, args) => {
     pvehs.unshift(vehicle);
     player.setMeta("vehicles", pvehs);
   } catch (e) {
-    chat.send(player, `{ff0000} Vehicle Model {ff9500}${args[0]} {ff0000}does not exist..`);
+    chat.send(player, `{ff0000} Le modèle de voiture : {ff9500}${args[0]} {ff0000} n'éxiste pas !`);
     alt.log(e);
   }
 });
@@ -215,24 +206,16 @@ chat.registerCmd("pos", (player, args) => {
 
 chat.registerCmd("tp", (player, args) => {
   if (args && args.length === 0) {
-    chat.send(player, "Usage: /tp (target player)");
+    chat.send(player, "Usage: /tp (Joueurs)");
     return;
   }
   const foundPlayers = alt.Player.all.filter((p) => p.name === args[0]);
   if (foundPlayers && foundPlayers.length > 0) {
     player.pos = foundPlayers[0].pos;
-    chat.send(player, `You got teleported to {1cacd4}${foundPlayers[0].name}{ffffff}`);
+    chat.send(player, `Vous avez été teléporté as : {1cacd4}${foundPlayers[0].name}{ffffff}`);
   } else {
-    chat.send(player, `{ff0000} Player {ff9500}${args[0]} {ff0000}not found..`);
+    chat.send(player, `{ff0000} Le joueur : {ff9500}${args[0]} {ff0000}ne peut être trouvé..`);
   }
-});
-
-chat.registerCmd("model", (player, args) => {
-  if (args.length === 0) {
-    chat.send(player, "Usage: /model (modelName)");
-    return;
-  }
-  player.model = args[0];
 });
 
 chat.registerCmd("weapon", (player, args) => {
@@ -243,10 +226,10 @@ chat.registerCmd("weapon", (player, args) => {
   player.giveWeapon(alt.hash("weapon_" + args[0]), 500, true);
 });
 
-chat.registerCmd("weapons", (player, args) => {
-  for (let weapon of weapons) {
-    player.giveWeapon(alt.hash("weapon_" + weapon), 500, true);
-  }
-});
+//chat.registerCmd("weapons", (player, args) => {
+//  for (let weapon of weapons) {
+//    player.giveWeapon(alt.hash("weapon_" + weapon), 500, true);
+//  }
+//});
 
 // =============================== Commands End ====================================================
