@@ -8,7 +8,7 @@ function invokeCmd(player, cmd, args) {
   const callback = cmdHandlers[cmd];
 
   if (callback) {
-    callback(player, args);
+    callback(player, ...args);
   } else {
     send(player, `{FF0000} Unknown command /${cmd}`);
   }
