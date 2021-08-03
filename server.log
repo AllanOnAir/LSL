@@ -1,26 +1,19 @@
-[15:01:43] alt:V Server 5.3 (release)
-[15:01:43] Starting LSL DEV on 0.0.0.0:7788
-[15:01:43] Loading resource core
-[15:01:43] Loaded resource core
-[15:01:43] Loading resource gabz_mrpd
-[15:01:43] Loaded resource gabz_mrpd
-[15:01:43] Loading resource gabz_mrpdloader
-[15:01:43] Loaded resource gabz_mrpdloader
-[15:01:43] Required server permissions:
-[15:01:43] Optional server permissions:
-[15:01:43] Starting HTTP server on 0.0.0.0:7788
-[15:01:43] Main thread started (ThreadId: 11752)
-[15:01:43] Colshape thread started (ThreadId: 1724)
-[15:01:43] VoicePacketProcess thread started (ThreadId: 7396)
-[15:01:43] VoiceStreamer thread started (ThreadId: 5812)
-[15:01:43] EntityStreamer thread started (ThreadId: 5708)
-[15:01:43] Network thread started (ThreadId: 12224)
-[15:01:43] Console thread started (ThreadId: 3612)
-[15:01:43] Server started
-[15:04:01] Stopping resource core
-[15:04:01] Stopped resource core
-[15:04:01] Stopping resource gabz_mrpd
-[15:04:01] Stopped resource gabz_mrpd
-[15:04:01] Stopping resource gabz_mrpdloader
-[15:04:01] Stopped resource gabz_mrpdloader
-[15:04:02] Server shutdown
+[11:29:16] alt:V Server 5.3 (release)
+[11:29:16] Starting LSL DEV on 0.0.0.0:7788
+[11:29:16] Loading resource core
+[11:29:18] Loaded resource core
+[11:29:18] Loading resource gabz_mrpd
+[11:29:20] Loaded resource gabz_mrpd
+[11:29:20] Loading resource gabz_mrpdloader
+[11:29:20] Loaded resource gabz_mrpdloader
+[11:29:20] Required server permissions:
+[11:29:20] Optional server permissions:
+[11:29:20] Starting HTTP server on 0.0.0.0:7788
+[11:29:20] Main thread started (ThreadId: 4292)
+[11:29:20] VoiceStreamer thread started (ThreadId: 8168)
+[11:29:20] Colshape thread started (ThreadId: 11984)
+[11:29:20] VoicePacketProcess thread started (ThreadId: 8092)
+[11:29:20] EntityStreamer thread started (ThreadId: 12184)
+[11:29:20] Network thread started (ThreadId: 12160)
+[11:29:20] Console thread started (ThreadId: 12156)
+[11:29:20] Server started
