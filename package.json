@@ -25,6 +25,7 @@
     "@altv/types-webview": "^1.0.2"
   },
   "dependencies": {
+    "mongodb": "^4.0.1",
     "simplymongo": "^2.1.1"
   }
 }
