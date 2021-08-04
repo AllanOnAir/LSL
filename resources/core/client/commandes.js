@@ -124,20 +124,6 @@ function isVectorEqual(vector1, vector2) {
     );
 }
 
-//alt.on("noclip:start", start);
-//alt.onServer("noclip:start", start);
-//function start() {
-//    if(NoClip.enabled) return;
-//    NoClip.start();
-//}
-//
-//alt.on("noclip:stop", stop);
-//alt.onServer("noclip:stop", stop);
-//function stop() {
-//    if(!NoClip.enabled) return;
-//    NoClip.stop();
-//}
-
 alt.on('keydown', keypress)
 function keypress(key) {
   alt.log(key)
