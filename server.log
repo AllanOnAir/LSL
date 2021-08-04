@@ -1,28 +1,49 @@
-[13:36:26] alt:V Server 5.3 (release)
-[13:36:26] Starting LSL DEV on localhost:7788
-[13:36:26] Loading resource core
-[13:36:27] Loaded resource core
-[13:36:27] Loading resource gabz_mrpd
-[13:36:27] Loaded resource gabz_mrpd
-[13:36:27] Loading resource gabz_mrpdloader
-[13:36:27] Loaded resource gabz_mrpdloader
-[13:36:27] Required server permissions:
-[13:36:27] Optional server permissions:
-[13:36:27] Starting HTTP server on localhost:7788
-[13:36:27] Main thread started (ThreadId: 8076)
-[13:36:27] VoicePacketProcess thread started (ThreadId: 6516)
-[13:36:27] VoiceStreamer thread started (ThreadId: 13568)
-[13:36:27] Colshape thread started (ThreadId: 6392)
-[13:36:27] EntityStreamer thread started (ThreadId: 17216)
-[13:36:27] Network thread started (ThreadId: 13088)
-[13:36:27] Console thread started (ThreadId: 12868)
-[13:36:27] Server started
-[13:36:27] Nous avons réeussi as charger la database
-[13:36:34] -1227.164794921875
-[13:38:11] Stopping resource core
-[13:38:11] Stopped resource core
-[13:38:11] Stopping resource gabz_mrpd
-[13:38:11] Stopped resource gabz_mrpd
-[13:38:11] Stopping resource gabz_mrpdloader
-[13:38:11] Stopped resource gabz_mrpdloader
-[13:38:12] Server shutdown
+[15:01:48] alt:V Server 5.3 (release)
+[15:01:48] Starting LSL DEV on localhost:7788
+[15:01:48] Loading resource core
+[15:01:49] Loaded resource core
+[15:01:49] Loading resource gabz_mrpd
+[15:01:49] Loaded resource gabz_mrpd
+[15:01:49] Loading resource gabz_mrpdloader
+[15:01:49] Loaded resource gabz_mrpdloader
+[15:01:49] Loading resource altv_gn_queensbox
+[15:01:49] Loaded resource altv_gn_queensbox
+[15:01:49] Loading resource altv_cratsenburg_hotel
+[15:01:49] Loaded resource altv_cratsenburg_hotel
+[15:01:49] Loading resource gn_altv_hotel_load
+[15:01:50] Loaded resource gn_altv_hotel_load
+[15:01:50] Loading resource altv_gn_mz_hopital
+[15:01:51] Loaded resource altv_gn_mz_hopital
+[15:01:51] Loading resource altv_tplift_hopital
+[15:01:51] Loaded resource altv_tplift_hopital
+[15:01:51] Required server permissions:
+[15:01:51] Optional server permissions:
+[15:01:51] Starting HTTP server on localhost:7788
+[15:01:51] Main thread started (ThreadId: 10612)
+[15:01:51] VoicePacketProcess thread started (ThreadId: 10532)
+[15:01:51] VoiceStreamer thread started (ThreadId: 8044)
+[15:01:51] Colshape thread started (ThreadId: 5160)
+[15:01:51] EntityStreamer thread started (ThreadId: 13460)
+[15:01:51] Network thread started (ThreadId: 4544)
+[15:01:51] Console thread started (ThreadId: 10024)
+[15:01:51] Server started
+[15:01:51] Nous avons réeussi as charger la database
+[15:02:02] -1213.107666015625
+[15:23:18][Warning] ReceiveData() took: 56 ms, received events:  0 , packets sent:  0
+[15:56:46] Stopping resource core
+[15:56:46] Stopped resource core
+[15:56:46] Stopping resource altv_gn_queensbox
+[15:56:46] Stopped resource altv_gn_queensbox
+[15:56:46] Stopping resource gabz_mrpd
+[15:56:46] Stopped resource gabz_mrpd
+[15:56:46] Stopping resource altv_tplift_hopital
+[15:56:46] Stopped resource altv_tplift_hopital
+[15:56:46] Stopping resource gabz_mrpdloader
+[15:56:46] Stopped resource gabz_mrpdloader
+[15:56:46] Stopping resource altv_gn_mz_hopital
+[15:56:46] Stopped resource altv_gn_mz_hopital
+[15:56:46] Stopping resource gn_altv_hotel_load
+[15:56:46] Stopped resource gn_altv_hotel_load
+[15:56:46] Stopping resource altv_cratsenburg_hotel
+[15:56:46] Stopped resource altv_cratsenburg_hotel
+[15:56:46] Server shutdown
