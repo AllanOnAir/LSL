@@ -2,7 +2,7 @@
 import * as alt from 'alt-server';
 import * as sm from 'simplymongo';
 import './chat';
-
+import './commandes';
 
 // Connections à la base de données !
 

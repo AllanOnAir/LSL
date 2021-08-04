@@ -1,3 +1,4 @@
+/// <reference types="@altv/types-natives" />
 import * as alt from "alt-client";
 
 let buffer = [];

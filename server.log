@@ -1,29 +1,27 @@
-[12:25:39] alt:V Server 5.3 (release)
-[12:25:39] Starting LSL DEV on localhost:7788
-[12:25:39] Loading resource core
-[12:25:40] Loaded resource core
-[12:25:40] Loading resource gabz_mrpd
-[12:25:40] Loaded resource gabz_mrpd
-[12:25:40] Loading resource gabz_mrpdloader
-[12:25:40] Loaded resource gabz_mrpdloader
-[12:25:40] Required server permissions:
-[12:25:40] Optional server permissions:
-[12:25:40] Starting HTTP server on localhost:7788
-[12:25:40] Main thread started (ThreadId: 15252)
-[12:25:40] VoicePacketProcess thread started (ThreadId: 5908)
-[12:25:40] Colshape thread started (ThreadId: 12632)
-[12:25:40] VoiceStreamer thread started (ThreadId: 3116)
-[12:25:40] EntityStreamer thread started (ThreadId: 9392)
-[12:25:40] Network thread started (ThreadId: 15308)
-[12:25:40] Console thread started (ThreadId: 6176)
-[12:25:40] Server started
-[12:25:40] Nous avons réeussi as charger la database
-[12:25:45] -1301.7098388671875
-[12:26:13] -1277.248291015625
-[12:26:37] Stopping resource core
-[12:26:37] Stopped resource core
-[12:26:37] Stopping resource gabz_mrpd
-[12:26:37] Stopped resource gabz_mrpd
-[12:26:37] Stopping resource gabz_mrpdloader
-[12:26:37] Stopped resource gabz_mrpdloader
-[12:26:37] Server shutdown
+[13:34:11] alt:V Server 5.3 (release)
+[13:34:11] Starting LSL DEV on localhost:7788
+[13:34:11] Loading resource core
+[13:34:12] Loaded resource core
+[13:34:12] Loading resource gabz_mrpd
+[13:34:12] Loaded resource gabz_mrpd
+[13:34:12] Loading resource gabz_mrpdloader
+[13:34:12] Loaded resource gabz_mrpdloader
+[13:34:12] Required server permissions:
+[13:34:12] Optional server permissions:
+[13:34:12] Starting HTTP server on localhost:7788
+[13:34:12] Main thread started (ThreadId: 16548)
+[13:34:12] VoicePacketProcess thread started (ThreadId: 16268)
+[13:34:12] VoiceStreamer thread started (ThreadId: 2624)
+[13:34:12] Colshape thread started (ThreadId: 14644)
+[13:34:12] EntityStreamer thread started (ThreadId: 4020)
+[13:34:12] Network thread started (ThreadId: 13672)
+[13:34:12] Console thread started (ThreadId: 17220)
+[13:34:12] Server started
+[13:34:12] Nous avons réeussi as charger la database
+[13:34:18] Stopping resource core
+[13:34:18] Stopped resource core
+[13:34:18] Stopping resource gabz_mrpd
+[13:34:18] Stopped resource gabz_mrpd
+[13:34:18] Stopping resource gabz_mrpdloader
+[13:34:18] Stopped resource gabz_mrpdloader
+[13:34:18] Server shutdown

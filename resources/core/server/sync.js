@@ -1,3 +1,4 @@
+/// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-server" />
 import alt from 'alt-server';
 import * as sm from 'simplymongo';
@@ -15,7 +16,7 @@ async function handleSyncConnect(player) {
   const accounts = await db.fetchAllByField('socialclub', player.socialID, 'accounts');
   let compte;
 
-  if (accounts.length <= 1) {
+  if (accounts.length < 1) {
 
     const newPlayer = {
       socialclub: player.socialID,
@@ -52,31 +53,6 @@ async function handleSyncConnect(player) {
 
   
 }
-
-
-
-//async function PlayerConnection(player) {
-//
-//  const account = await db.fetchData('socialclub', player.socialID, 'accounts'); 
-//  player.data = account;
-//  const lastposx = player.data.x
-//
-//  alt.log(lastposx)
-//
-//
-//
-//  player.spawn(-1291.71, 83.43, 54.89, 2000);
-//  player.model = 'mp_m_freemode_01';
-//}
-
-
-
-
-
-
-
-
-
 
 // Éxecutable lors de la déconnexion.
 
