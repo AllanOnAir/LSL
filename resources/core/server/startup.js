@@ -16,7 +16,7 @@ async function establishConnection() {
 new sm.Database('mongodb://localhost:27017', 'mydb', ['accounts', 'characters']);
 
 // Lance les functions selon les évênements.
-alt.on('playerConnect', PlayerConnection);
+//alt.on('playerConnect', PlayerConnection);
 alt.on('playerDeath', PlayerIsDead)
 
 // Constantes et variables.
@@ -24,10 +24,7 @@ export const DeadPlayers = {};
 const timerForRespawn = 5000; // en MS => 1 seconde = 1000
  
 // Les Functions
-function PlayerConnection(player) {
-  player.spawn(-1291.71, 83.43, 54.89, 2000);
-  player.model = 'mp_m_freemode_01';
-}
+
 
 function PlayerIsDead() {
   // Regarde si le joueur es bien mort

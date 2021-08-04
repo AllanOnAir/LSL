@@ -1,29 +1,29 @@
-[10:15:20] alt:V Server 5.3 (release)
-[10:15:21] Starting LSL DEV on localhost:7788
-[10:15:21] Loading resource core
-[10:15:21] Loaded resource core
-[10:15:21] Loading resource gabz_mrpd
-[10:15:21] Loaded resource gabz_mrpd
-[10:15:21] Loading resource gabz_mrpdloader
-[10:15:21] Loaded resource gabz_mrpdloader
-[10:15:21] Required server permissions:
-[10:15:21] Optional server permissions:
-[10:15:21] Starting HTTP server on localhost:7788
-[10:15:21] Main thread started (ThreadId: 6476)
-[10:15:21] Colshape thread started (ThreadId: 12148)
-[10:15:21] VoicePacketProcess thread started (ThreadId: 5424)
-[10:15:21] VoiceStreamer thread started (ThreadId: 15056)
-[10:15:21] EntityStreamer thread started (ThreadId: 10176)
-[10:15:21] Network thread started (ThreadId: 16832)
-[10:15:21] Console thread started (ThreadId: 14480)
-[10:15:21] Server started
-[10:15:21] Nous avons réeussi as charger la database
-[10:16:11] 3
-[10:16:23] 4
-[10:19:23] Stopping resource core
-[10:19:23] Stopped resource core
-[10:19:23] Stopping resource gabz_mrpd
-[10:19:23] Stopped resource gabz_mrpd
-[10:19:23] Stopping resource gabz_mrpdloader
-[10:19:23] Stopped resource gabz_mrpdloader
-[10:19:23] Server shutdown
+[12:25:39] alt:V Server 5.3 (release)
+[12:25:39] Starting LSL DEV on localhost:7788
+[12:25:39] Loading resource core
+[12:25:40] Loaded resource core
+[12:25:40] Loading resource gabz_mrpd
+[12:25:40] Loaded resource gabz_mrpd
+[12:25:40] Loading resource gabz_mrpdloader
+[12:25:40] Loaded resource gabz_mrpdloader
+[12:25:40] Required server permissions:
+[12:25:40] Optional server permissions:
+[12:25:40] Starting HTTP server on localhost:7788
+[12:25:40] Main thread started (ThreadId: 15252)
+[12:25:40] VoicePacketProcess thread started (ThreadId: 5908)
+[12:25:40] Colshape thread started (ThreadId: 12632)
+[12:25:40] VoiceStreamer thread started (ThreadId: 3116)
+[12:25:40] EntityStreamer thread started (ThreadId: 9392)
+[12:25:40] Network thread started (ThreadId: 15308)
+[12:25:40] Console thread started (ThreadId: 6176)
+[12:25:40] Server started
+[12:25:40] Nous avons réeussi as charger la database
+[12:25:45] -1301.7098388671875
+[12:26:13] -1277.248291015625
+[12:26:37] Stopping resource core
+[12:26:37] Stopped resource core
+[12:26:37] Stopping resource gabz_mrpd
+[12:26:37] Stopped resource gabz_mrpd
+[12:26:37] Stopping resource gabz_mrpdloader
+[12:26:37] Stopped resource gabz_mrpdloader
+[12:26:37] Server shutdown
