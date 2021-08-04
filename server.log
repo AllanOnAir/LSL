@@ -1,26 +1,29 @@
-[13:55:29] alt:V Server 5.3 (release)
-[13:55:29] Starting LSL DEV on localhost:7788
-[13:55:29] Loading resource core
-[13:55:30] Loaded resource core
-[13:55:30] Loading resource gabz_mrpd
-[13:55:30] Loaded resource gabz_mrpd
-[13:55:30] Loading resource gabz_mrpdloader
-[13:55:30] Loaded resource gabz_mrpdloader
-[13:55:30] Required server permissions:
-[13:55:30] Optional server permissions:
-[13:55:30] Starting HTTP server on localhost:7788
-[13:55:30] Main thread started (ThreadId: 4412)
-[13:55:30] VoicePacketProcess thread started (ThreadId: 11528)
-[13:55:30] VoiceStreamer thread started (ThreadId: 12932)
-[13:55:30] Colshape thread started (ThreadId: 12360)
-[13:55:30] EntityStreamer thread started (ThreadId: 8800)
-[13:55:30] Network thread started (ThreadId: 480)
-[13:55:30] Console thread started (ThreadId: 244)
-[13:55:30] Server started
-[13:55:52] Stopping resource core
-[13:55:52] Stopped resource core
-[13:55:52] Stopping resource gabz_mrpd
-[13:55:52] Stopped resource gabz_mrpd
-[13:55:52] Stopping resource gabz_mrpdloader
-[13:55:52] Stopped resource gabz_mrpdloader
-[13:55:52] Server shutdown
+[10:15:20] alt:V Server 5.3 (release)
+[10:15:21] Starting LSL DEV on localhost:7788
+[10:15:21] Loading resource core
+[10:15:21] Loaded resource core
+[10:15:21] Loading resource gabz_mrpd
+[10:15:21] Loaded resource gabz_mrpd
+[10:15:21] Loading resource gabz_mrpdloader
+[10:15:21] Loaded resource gabz_mrpdloader
+[10:15:21] Required server permissions:
+[10:15:21] Optional server permissions:
+[10:15:21] Starting HTTP server on localhost:7788
+[10:15:21] Main thread started (ThreadId: 6476)
+[10:15:21] Colshape thread started (ThreadId: 12148)
+[10:15:21] VoicePacketProcess thread started (ThreadId: 5424)
+[10:15:21] VoiceStreamer thread started (ThreadId: 15056)
+[10:15:21] EntityStreamer thread started (ThreadId: 10176)
+[10:15:21] Network thread started (ThreadId: 16832)
+[10:15:21] Console thread started (ThreadId: 14480)
+[10:15:21] Server started
+[10:15:21] Nous avons réeussi as charger la database
+[10:16:11] 3
+[10:16:23] 4
+[10:19:23] Stopping resource core
+[10:19:23] Stopped resource core
+[10:19:23] Stopping resource gabz_mrpd
+[10:19:23] Stopped resource gabz_mrpd
+[10:19:23] Stopping resource gabz_mrpdloader
+[10:19:23] Stopped resource gabz_mrpdloader
+[10:19:23] Server shutdown

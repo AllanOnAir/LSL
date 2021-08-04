@@ -6,14 +6,14 @@ import './chat';
 
 // Connections à la base de données !
 
-//sm.onReady(establishConnection);
-//
-//async function establishConnection() {
-//  import('./bigImportFile.js');
-//  alt.log('Nous avons réeussi as charger la database')
-//}
-//// création de la DB
-//new sm.Database('mongodb://localhost:27017', 'mydb', ['socialClubID', 'characters']);
+sm.onReady(establishConnection);
+
+async function establishConnection() {
+  import('./bigImportFile.js');
+  alt.log('Nous avons réeussi as charger la database')
+}
+// création de la DB
+new sm.Database('mongodb://localhost:27017', 'mydb', ['accounts', 'characters']);
 
 // Lance les functions selon les évênements.
 alt.on('playerConnect', PlayerConnection);
