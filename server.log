@@ -1,49 +1,55 @@
-[15:01:48] alt:V Server 5.3 (release)
-[15:01:48] Starting LSL DEV on localhost:7788
-[15:01:48] Loading resource core
-[15:01:49] Loaded resource core
-[15:01:49] Loading resource gabz_mrpd
-[15:01:49] Loaded resource gabz_mrpd
-[15:01:49] Loading resource gabz_mrpdloader
-[15:01:49] Loaded resource gabz_mrpdloader
-[15:01:49] Loading resource altv_gn_queensbox
-[15:01:49] Loaded resource altv_gn_queensbox
-[15:01:49] Loading resource altv_cratsenburg_hotel
-[15:01:49] Loaded resource altv_cratsenburg_hotel
-[15:01:49] Loading resource gn_altv_hotel_load
-[15:01:50] Loaded resource gn_altv_hotel_load
-[15:01:50] Loading resource altv_gn_mz_hopital
-[15:01:51] Loaded resource altv_gn_mz_hopital
-[15:01:51] Loading resource altv_tplift_hopital
-[15:01:51] Loaded resource altv_tplift_hopital
-[15:01:51] Required server permissions:
-[15:01:51] Optional server permissions:
-[15:01:51] Starting HTTP server on localhost:7788
-[15:01:51] Main thread started (ThreadId: 10612)
-[15:01:51] VoicePacketProcess thread started (ThreadId: 10532)
-[15:01:51] VoiceStreamer thread started (ThreadId: 8044)
-[15:01:51] Colshape thread started (ThreadId: 5160)
-[15:01:51] EntityStreamer thread started (ThreadId: 13460)
-[15:01:51] Network thread started (ThreadId: 4544)
-[15:01:51] Console thread started (ThreadId: 10024)
-[15:01:51] Server started
-[15:01:51] Nous avons réeussi as charger la database
-[15:02:02] -1213.107666015625
-[15:23:18][Warning] ReceiveData() took: 56 ms, received events:  0 , packets sent:  0
-[15:56:46] Stopping resource core
-[15:56:46] Stopped resource core
-[15:56:46] Stopping resource altv_gn_queensbox
-[15:56:46] Stopped resource altv_gn_queensbox
-[15:56:46] Stopping resource gabz_mrpd
-[15:56:46] Stopped resource gabz_mrpd
-[15:56:46] Stopping resource altv_tplift_hopital
-[15:56:46] Stopped resource altv_tplift_hopital
-[15:56:46] Stopping resource gabz_mrpdloader
-[15:56:46] Stopped resource gabz_mrpdloader
-[15:56:46] Stopping resource altv_gn_mz_hopital
-[15:56:46] Stopped resource altv_gn_mz_hopital
-[15:56:46] Stopping resource gn_altv_hotel_load
-[15:56:46] Stopped resource gn_altv_hotel_load
-[15:56:46] Stopping resource altv_cratsenburg_hotel
-[15:56:46] Stopped resource altv_cratsenburg_hotel
-[15:56:46] Server shutdown
+[17:06:03] alt:V Server 5.3 (release)
+[17:06:03] Starting LSL DEV on localhost:7788
+[17:06:03] Loading resource core
+[17:06:04] Loaded resource core
+[17:06:04] Loading resource gabz_mrpd
+[17:06:04] Loaded resource gabz_mrpd
+[17:06:04] Loading resource gabz_mrpdloader
+[17:06:04] Loaded resource gabz_mrpdloader
+[17:06:04] Loading resource altv_gn_queensbox
+[17:06:04] Loaded resource altv_gn_queensbox
+[17:06:04] Loading resource altv_cratsenburg_hotel
+[17:06:04] Loaded resource altv_cratsenburg_hotel
+[17:06:04] Loading resource gn_altv_hotel_load
+[17:06:04] Loaded resource gn_altv_hotel_load
+[17:06:04] Loading resource altv_gn_mz_hopital
+[17:06:05] Loaded resource altv_gn_mz_hopital
+[17:06:05] Loading resource altv_tplift_hopital
+[17:06:05] Loaded resource altv_tplift_hopital
+[17:06:05] Loading resource apache_tune_up_garage
+[17:06:05] Loaded resource apache_tune_up_garage
+[17:06:05] Loading resource apache_officebuilding_altv
+[17:06:06] Loaded resource apache_officebuilding_altv
+[17:06:06] Required server permissions:
+[17:06:06] Optional server permissions:
+[17:06:06] Starting HTTP server on localhost:7788
+[17:06:06] Main thread started (ThreadId: 17224)
+[17:06:06] VoicePacketProcess thread started (ThreadId: 13400)
+[17:06:06] Colshape thread started (ThreadId: 9776)
+[17:06:06] VoiceStreamer thread started (ThreadId: 15248)
+[17:06:06] EntityStreamer thread started (ThreadId: 12136)
+[17:06:06] Network thread started (ThreadId: 13964)
+[17:06:06] Console thread started (ThreadId: 9248)
+[17:06:06] Server started
+[17:06:06] Nous avons réeussi as charger la database
+[17:06:23] Stopping resource core
+[17:06:23] Stopped resource core
+[17:06:23] Stopping resource gabz_mrpd
+[17:06:23] Stopped resource gabz_mrpd
+[17:06:23] Stopping resource altv_gn_queensbox
+[17:06:23] Stopped resource altv_gn_queensbox
+[17:06:23] Stopping resource altv_tplift_hopital
+[17:06:23] Stopped resource altv_tplift_hopital
+[17:06:23] Stopping resource gabz_mrpdloader
+[17:06:23] Stopped resource gabz_mrpdloader
+[17:06:23] Stopping resource altv_gn_mz_hopital
+[17:06:23] Stopped resource altv_gn_mz_hopital
+[17:06:23] Stopping resource gn_altv_hotel_load
+[17:06:23] Stopped resource gn_altv_hotel_load
+[17:06:23] Stopping resource altv_cratsenburg_hotel
+[17:06:23] Stopped resource altv_cratsenburg_hotel
+[17:06:23] Stopping resource apache_tune_up_garage
+[17:06:23] Stopped resource apache_tune_up_garage
+[17:06:23] Stopping resource apache_officebuilding_altv
+[17:06:23] Stopped resource apache_officebuilding_altv
+[17:06:24] Server shutdown

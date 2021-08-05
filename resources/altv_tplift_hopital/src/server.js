@@ -1,3 +1,4 @@
+/// <reference types="@altv/types-server" />
 /**
  * @author Trackoad
  * @link https://gitlab.com/Trackoad
