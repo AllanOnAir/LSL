@@ -1,108 +1,60 @@
-[10:55:44] alt:V Server 5.3 (release)
-[10:55:44] Starting LSL DEV on localhost:7788
-[10:55:44] Loading resource core
-[10:55:44] Loaded resource core
-[10:55:44] Loading resource gabz_mrpd
-[10:55:44] Loaded resource gabz_mrpd
-[10:55:44] Loading resource gabz_mrpdloader
-[10:55:44] Loaded resource gabz_mrpdloader
-[10:55:44] Loading resource altv_gn_queensbox
-[10:55:45] Loaded resource altv_gn_queensbox
-[10:55:45] Loading resource altv_cratsenburg_hotel
-[10:55:45] Loaded resource altv_cratsenburg_hotel
-[10:55:45] Loading resource gn_altv_hotel_load
-[10:55:45] Loaded resource gn_altv_hotel_load
-[10:55:45] Loading resource altv_gn_mz_hopital
-[10:55:45] Loaded resource altv_gn_mz_hopital
-[10:55:45] Loading resource altv_tplift_hopital
-[10:55:45] Loaded resource altv_tplift_hopital
-[10:55:45] Loading resource apache_tune_up_garage
-[10:55:45] Loaded resource apache_tune_up_garage
-[10:55:45] Loading resource apache_officebuilding_altv
-[10:55:45] Loaded resource apache_officebuilding_altv
-[10:55:45] Loading resource gn_altv_tplift_hotel
-[10:55:45] Loaded resource gn_altv_tplift_hotel
-[10:55:45] Required server permissions:
-[10:55:45] Optional server permissions:
-[10:55:45] Starting HTTP server on localhost:7788
-[10:55:45] Main thread started (ThreadId: 14768)
-[10:55:45] VoicePacketProcess thread started (ThreadId: 5628)
-[10:55:45] VoiceStreamer thread started (ThreadId: 8400)
-[10:55:45] Colshape thread started (ThreadId: 15744)
-[10:55:45] EntityStreamer thread started (ThreadId: 10832)
-[10:55:45] Network thread started (ThreadId: 11212)
-[10:55:45] Console thread started (ThreadId: 3580)
-[10:55:45] Server started
-[10:55:45] Nous avons réeussi as charger la database
-[11:01:55] -446.6109924316406
-[11:02:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:02:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:02:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:02:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:02:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:02:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:02:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:02:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:02:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:02:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:02:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:02:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:03:50][Error] [V8] Exception at altv_tplift_hopital:file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46
-[11:03:50][Error]   	player.pos = colshapes.get(colshapeId);
-[11:03:50][Error]   Error: Failed to convert value to Vector3
-    at file:///C:/Users/Allan/Desktop/server/LSL/resources/altv_tplift_hopital/src/server.js:46:13
-[11:08:53] Stopping resource core
-[11:08:53] Stopped resource core
-[11:08:53] Stopping resource gabz_mrpd
-[11:08:53] Stopped resource gabz_mrpd
-[11:08:53] Stopping resource altv_gn_queensbox
-[11:08:53] Stopped resource altv_gn_queensbox
-[11:08:53] Stopping resource altv_tplift_hopital
-[11:08:53] Stopped resource altv_tplift_hopital
-[11:08:53] Stopping resource gabz_mrpdloader
-[11:08:53] Stopped resource gabz_mrpdloader
-[11:08:53] Stopping resource altv_gn_mz_hopital
-[11:08:53] Stopped resource altv_gn_mz_hopital
-[11:08:53] Stopping resource gn_altv_hotel_load
-[11:08:53] Stopped resource gn_altv_hotel_load
-[11:08:53] Stopping resource altv_cratsenburg_hotel
-[11:08:53] Stopped resource altv_cratsenburg_hotel
-[11:08:53] Stopping resource apache_tune_up_garage
-[11:08:53] Stopped resource apache_tune_up_garage
-[11:08:53] Stopping resource apache_officebuilding_altv
-[11:08:53] Stopped resource apache_officebuilding_altv
-[11:08:53] Stopping resource gn_altv_tplift_hotel
-[11:08:53] Stopped resource gn_altv_tplift_hotel
-[11:08:53] Server shutdown
+[09:39:47] alt:V Server 5.3 (release)
+[09:39:47] Starting LSL DEV on localhost:7788
+[09:39:47] Loading resource core
+[09:39:47] Loaded resource core
+[09:39:47] Loading resource gabz_mrpd
+[09:39:48] Loaded resource gabz_mrpd
+[09:39:48] Loading resource gabz_mrpdloader
+[09:39:48] Loaded resource gabz_mrpdloader
+[09:39:48] Loading resource altv_gn_queensbox
+[09:39:48] Loaded resource altv_gn_queensbox
+[09:39:48] Loading resource altv_cratsenburg_hotel
+[09:39:48] Loaded resource altv_cratsenburg_hotel
+[09:39:48] Loading resource gn_altv_hotel_load
+[09:39:48] Loaded resource gn_altv_hotel_load
+[09:39:48] Loading resource altv_gn_mz_hopital
+[09:39:48] Loaded resource altv_gn_mz_hopital
+[09:39:48] Loading resource altv_tplift_hopital
+[09:39:48] Loaded resource altv_tplift_hopital
+[09:39:48] Loading resource apache_tune_up_garage
+[09:39:48] Loaded resource apache_tune_up_garage
+[09:39:48] Loading resource apache_officebuilding_altv
+[09:39:48] Loaded resource apache_officebuilding_altv
+[09:39:48] Loading resource gn_altv_tplift_hotel
+[09:39:48] Loaded resource gn_altv_tplift_hotel
+[09:39:48] Required server permissions:
+[09:39:48] Optional server permissions:
+[09:39:48] Starting HTTP server on localhost:7788
+[09:39:48] Main thread started (ThreadId: 11148)
+[09:39:48] VoicePacketProcess thread started (ThreadId: 8248)
+[09:39:48] Colshape thread started (ThreadId: 8596)
+[09:39:48] VoiceStreamer thread started (ThreadId: 14588)
+[09:39:48] EntityStreamer thread started (ThreadId: 13180)
+[09:39:48] Network thread started (ThreadId: 14652)
+[09:39:48] Console thread started (ThreadId: 4972)
+[09:39:48] Server started
+[09:39:49] Nous avons réeussi as charger la database
+[09:39:57] 449.4593505859375
+[09:40:59] Stopping resource core
+[09:40:59] Stopped resource core
+[09:40:59] Stopping resource gabz_mrpd
+[09:40:59] Stopped resource gabz_mrpd
+[09:40:59] Stopping resource altv_gn_queensbox
+[09:40:59] Stopped resource altv_gn_queensbox
+[09:40:59] Stopping resource altv_tplift_hopital
+[09:40:59] Stopped resource altv_tplift_hopital
+[09:40:59] Stopping resource gabz_mrpdloader
+[09:40:59] Stopped resource gabz_mrpdloader
+[09:40:59] Stopping resource altv_gn_mz_hopital
+[09:40:59] Stopped resource altv_gn_mz_hopital
+[09:40:59] Stopping resource gn_altv_hotel_load
+[09:40:59] Stopped resource gn_altv_hotel_load
+[09:40:59] Stopping resource altv_cratsenburg_hotel
+[09:40:59] Stopped resource altv_cratsenburg_hotel
+[09:40:59] Stopping resource apache_tune_up_garage
+[09:40:59] Stopped resource apache_tune_up_garage
+[09:40:59] Stopping resource apache_officebuilding_altv
+[09:40:59] Stopped resource apache_officebuilding_altv
+[09:40:59] Stopping resource gn_altv_tplift_hotel
+[09:40:59] Stopped resource gn_altv_tplift_hotel
+[09:40:59] Server shutdown

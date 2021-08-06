@@ -5,6 +5,11 @@
 import * as alt from "alt-client";
 import * as native from "natives";
 import './startup';
+// const and var
+
+var phoneOpened = 0;
+let phone;
+
 // Noclip
 export default class NoClip {
     static enabled = false;
@@ -75,7 +80,6 @@ export default class NoClip {
             );
     }
 }
-
 function addSpeedToVector(vector1, vector2, speed, lr = false) {
     return new alt.Vector3(
         vector1.x + vector2.x * speed,
@@ -83,7 +87,6 @@ function addSpeedToVector(vector1, vector2, speed, lr = false) {
         lr === true ? vector1.z : vector1.z + vector2.z * speed
     );
 }
-
 function camVectorForward(camRot) {
     let rotInRad = {
         x: camRot.x * (Math.PI / 180),
@@ -99,7 +102,6 @@ function camVectorForward(camRot) {
 
     return camDir;
 }
-
 function camVectorRight(camRot) {
     let rotInRad = {
         x: camRot.x * (Math.PI / 180),
@@ -115,7 +117,6 @@ function camVectorRight(camRot) {
 
     return camDir;
 }
-
 function isVectorEqual(vector1, vector2) {
     return (
         vector1.x === vector2.x &&
@@ -124,26 +125,60 @@ function isVectorEqual(vector1, vector2) {
     );
 }
 
-alt.on('keydown', keypress)
+
+
+// Events
+alt.on('keydown', keypress);
 function keypress(key) {
   alt.log(key)
 
   if (key == 118) {
-    start();
+    startNC();
   }
 
   if (key == 117) {
-    stop();
+    stopNC();
+  }
+
+  if (key == 112) {
+
+    openPhone();
+
   }
 }
 
-function start() {
+
+
+// function
+
+
+  // phone function
+function openPhone() {
+    if (!phone) {
+      phone = new alt.WebView("http://resource/client/cellphone/index.html");
+      phone.on('close:Phone', closePhone)
+    }
+    if (phoneOpened < 1) {
+      alt.log("nous ouvrons le télephone");
+      phone.focus();
+      alt.showCursor(true);
+      phoneOpened = 1
+    }
+}
+
+function closePhone() {
+  alt.showCursor(false);
+  phone.destroy();
+  phone = undefined
+  phoneOpened = 0
+}
+    // noclip dunction
+function startNC() {
   if(NoClip.enabled) return;
-  alt.log("no clip caliss ")
   NoClip.start();
 }
 
-function stop() {
+function stopNC() {
   if(!NoClip.enabled) return;
   NoClip.stop();
 }
