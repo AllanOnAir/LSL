@@ -1,6 +1,8 @@
 /// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-client" />
+/// <reference types="@altv/types-client" />
+/// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
 import * as alt from "alt-client";
 import * as native from "natives";
@@ -162,12 +164,14 @@ function openPhone() {
       alt.log("nous ouvrons le télephone");
       phone.focus();
       alt.showCursor(true);
+      alt.toggleGameControls(false);
       phoneOpened = 1
     }
 }
 
 function closePhone() {
   alt.showCursor(false);
+  alt.toggleGameControls(true);
   phone.destroy();
   phone = undefined
   phoneOpened = 0
