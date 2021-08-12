@@ -7,6 +7,13 @@ import * as sm from 'simplymongo';
 
 // constantes et variables.
 const db = sm.getDatabase();
+let inventaire;
+
+const empty = {
+  nom: 'empty',
+  src: './src/items/empty.png'
+};
+
 
 // Appel de fonction,
 alt.on('playerConnect', handleSyncConnect);
@@ -26,6 +33,7 @@ async function handleSyncConnect(player) {
       x: 0,
       y: 0,
       z: 0,
+      inventaire: [[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty],[0,empty]],
       liquide: 1000,
       banque: 1000,
       logins: 0,
@@ -58,6 +66,24 @@ async function handleSyncConnect(player) {
 
 // Éxecutable lors de la déconnexion.
 
+
+
+async function getInventory(player){
+  const position = player.pos;
+  const account = await db.fetchData('socialclub', player.socialID, 'accounts'); 
+  player.data = account;
+
+  let inventaire=player.data.inventaire;
+  alt.emitClient(player, 'giveInventory',inventaire);
+  //alt.log(inventaire)
+};
+
+alt.onClient("askForInventory", player => {
+  getInventory(player);
+});
+
+
+
 async function handleSyncDisconnect(player){
   const position = player.pos;
   const account = await db.fetchData('socialclub', player.socialID, 'accounts'); 
@@ -66,5 +92,5 @@ async function handleSyncDisconnect(player){
   player.data.y = position.y
   player.data.z = position.z
 
-  await db.updatePartialData(player.data._id, { x: player.data.x, y: player.data.y, z: player.data.z  }, 'accounts');
+  await db.updatePartialData(player.data._id, { x: player.data.x, y: player.data.y, z: player.data.z  }, 'accounts')
 }

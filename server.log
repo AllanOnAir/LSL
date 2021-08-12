@@ -1,60 +1,20 @@
-[08:55:41] alt:V Server 5.3 (release)
-[08:55:41] Starting LSL DEV on localhost:7788
-[08:55:41] Loading resource core
-[08:55:42] Loaded resource core
-[08:55:42] Loading resource gabz_mrpd
-[08:55:42] Loaded resource gabz_mrpd
-[08:55:42] Loading resource gabz_mrpdloader
-[08:55:42] Loaded resource gabz_mrpdloader
-[08:55:42] Loading resource altv_gn_queensbox
-[08:55:42] Loaded resource altv_gn_queensbox
-[08:55:42] Loading resource altv_cratsenburg_hotel
-[08:55:42] Loaded resource altv_cratsenburg_hotel
-[08:55:42] Loading resource gn_altv_hotel_load
-[08:55:42] Loaded resource gn_altv_hotel_load
-[08:55:42] Loading resource altv_gn_mz_hopital
-[08:55:43] Loaded resource altv_gn_mz_hopital
-[08:55:43] Loading resource altv_tplift_hopital
-[08:55:43] Loaded resource altv_tplift_hopital
-[08:55:43] Loading resource apache_tune_up_garage
-[08:55:43] Loaded resource apache_tune_up_garage
-[08:55:43] Loading resource apache_officebuilding_altv
-[08:55:43] Loaded resource apache_officebuilding_altv
-[08:55:43] Loading resource gn_altv_tplift_hotel
-[08:55:43] Loaded resource gn_altv_tplift_hotel
-[08:55:43] Required server permissions:
-[08:55:43] Optional server permissions:
-[08:55:43] Starting HTTP server on localhost:7788
-[08:55:43] Main thread started (ThreadId: 12392)
-[08:55:43] VoiceStreamer thread started (ThreadId: 15296)
-[08:55:43] Colshape thread started (ThreadId: 8424)
-[08:55:43] VoicePacketProcess thread started (ThreadId: 15516)
-[08:55:43] EntityStreamer thread started (ThreadId: 14940)
-[08:55:43] Network thread started (ThreadId: 2468)
-[08:55:43] Console thread started (ThreadId: 16744)
-[08:55:43] Server started
-[08:55:43] Nous avons réeussi as charger la database
-[08:58:00] 449.4593505859375
-[08:59:31] Stopping resource core
-[08:59:31] Stopped resource core
-[08:59:31] Stopping resource gabz_mrpd
-[08:59:31] Stopped resource gabz_mrpd
-[08:59:31] Stopping resource altv_gn_queensbox
-[08:59:31] Stopped resource altv_gn_queensbox
-[08:59:31] Stopping resource altv_tplift_hopital
-[08:59:31] Stopped resource altv_tplift_hopital
-[08:59:31] Stopping resource gabz_mrpdloader
-[08:59:31] Stopped resource gabz_mrpdloader
-[08:59:31] Stopping resource altv_gn_mz_hopital
-[08:59:31] Stopped resource altv_gn_mz_hopital
-[08:59:31] Stopping resource gn_altv_hotel_load
-[08:59:31] Stopped resource gn_altv_hotel_load
-[08:59:31] Stopping resource altv_cratsenburg_hotel
-[08:59:31] Stopped resource altv_cratsenburg_hotel
-[08:59:31] Stopping resource apache_tune_up_garage
-[08:59:31] Stopped resource apache_tune_up_garage
-[08:59:31] Stopping resource apache_officebuilding_altv
-[08:59:31] Stopped resource apache_officebuilding_altv
-[08:59:31] Stopping resource gn_altv_tplift_hotel
-[08:59:31] Stopped resource gn_altv_tplift_hotel
-[08:59:31] Server shutdown
+[18:16:10] alt:V Server 5.3 (release)
+[18:16:10] Starting LSL DEV on localhost:7788
+[18:16:10] Loading resource core
+[18:16:10] Loaded resource core
+[18:16:10] Required server permissions:
+[18:16:10] Optional server permissions:
+[18:16:10] Starting HTTP server on localhost:7788
+[18:16:10] Main thread started (ThreadId: 3616)
+[18:16:10] VoicePacketProcess thread started (ThreadId: 5372)
+[18:16:10] VoiceStreamer thread started (ThreadId: 4276)
+[18:16:10] Colshape thread started (ThreadId: 11448)
+[18:16:10] Network thread started (ThreadId: 14844)
+[18:16:10] Console thread started (ThreadId: 13060)
+[18:16:10] EntityStreamer thread started (ThreadId: 6636)
+[18:16:10] Server started
+[18:16:10] Nous avons réeussi as charger la database
+[18:16:14] -1291.7142333984375
+[18:17:32] Stopping resource core
+[18:17:32] Stopped resource core
+[18:17:32] Server shutdown

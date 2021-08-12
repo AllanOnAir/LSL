@@ -1,3 +1,5 @@
+/// <reference types="@altv/types-natives" />
+/// <reference types="@altv/types-client" />
 "use strict";
 import * as alt from "alt-client";
 import * as native from "natives";

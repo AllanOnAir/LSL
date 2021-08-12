@@ -1,7 +1,4 @@
-/// <reference types="@altv/types-client" />
-/// <reference types="@altv/types-client" />
-/// <reference types="@altv/types-client" />
-/// <reference types="@altv/types-client" />
+/// <reference types="@altv/types-natives" />
 /// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
 import * as alt from "alt-client";
@@ -11,6 +8,8 @@ import './startup';
 
 var phoneOpened = 0;
 let phone;
+const player = alt.Player
+
 
 // Noclip
 export default class NoClip {
@@ -127,8 +126,6 @@ function isVectorEqual(vector1, vector2) {
     );
 }
 
-
-
 // Events
 alt.on('keydown', keypress);
 function keypress(key) {
@@ -143,22 +140,19 @@ function keypress(key) {
   }
 
   if (key == 112) {
-
     openPhone();
-
+    syncInventory();
   }
 }
 
-
-
 // function
 
-
-  // phone function
+// phone function
 function openPhone() {
     if (!phone) {
       phone = new alt.WebView("http://resource/client/cellphone/index.html");
       phone.on('close:Phone', closePhone)
+      
     }
     if (phoneOpened < 1) {
       alt.log("nous ouvrons le télephone");
@@ -176,6 +170,19 @@ function closePhone() {
   phone = undefined
   phoneOpened = 0
 }
+
+function syncInventory() {
+  alt.emitServer('askForInventory');
+  alt.onServer("giveInventory", (inventaire) => {
+    phone.emit('inventaire',inventaire);
+    //alt.log(inventaire);
+  });
+}
+
+
+
+
+
     // noclip dunction
 function startNC() {
   if(NoClip.enabled) return;
