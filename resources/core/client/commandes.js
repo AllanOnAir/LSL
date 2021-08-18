@@ -141,7 +141,11 @@ function keypress(key) {
 
   if (key == 112) {
     openPhone();
-    syncInventory();
+
+    setTimeout(function(){
+      syncInventory();
+    }, 500);
+
   }
 }
 
@@ -155,7 +159,7 @@ function openPhone() {
       
     }
     if (phoneOpened < 1) {
-      alt.log("nous ouvrons le télephone");
+      //alt.log("nous ouvrons le télephone"); // Debugger
       phone.focus();
       alt.showCursor(true);
       alt.toggleGameControls(false);
@@ -175,7 +179,7 @@ function syncInventory() {
   alt.emitServer('askForInventory');
   alt.onServer("giveInventory", (inventaire) => {
     phone.emit('inventaire',inventaire);
-    //alt.log(inventaire);
+    //alt.log(inventaire); // Debugger
   });
 }
 

@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-#grid {
+.grid {
   margin-top: 80px;
   margin-left: 20px;
   display: inline-grid;
@@ -69,4 +69,10 @@
 
 .ItemIMG {
   width: 80px;
+}
+
+/* Pages */
+
+#inventaire {
+  display: none;
 }

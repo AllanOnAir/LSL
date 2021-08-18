@@ -1,16 +1,7 @@
 var dataloaded = false;
 var playerInventory = [];
 
-//alt.on('inventaire', inventaire =>{
-//  //console.log(inventaire)
-//  setInventory(inventaire);
-//  playerInventory = inventaire
-//})
-//
-//function setInventory(inventaire){ playerInventory = inventaire };
-
-
-
+// Cellphone Closing
 window.addEventListener('keydown', e => {
   if (e.key === 'Backspace') {
     dataloaded = false;
@@ -20,51 +11,26 @@ window.addEventListener('keydown', e => {
   }
 });
 
-
+// Database Loading
 alt.on('inventaire', inventaire =>{
   if ( dataloaded == false){
-    //setInventory(inventaire);
+    console.log(inventaire); // Debuger
     dataloaded = true;
-    console.log(inventaire);
-
-
     playerInventory = inventaire;
     
-      for (let i = 0; i < playerInventory.length; i++){
-        itemSrc = playerInventory[i][1].src
-        item = playerInventory[i][1]
-
-        //console.log(itemSrc)
-        document.getElementById(String(i)).src = itemSrc;
-      };
-
     for (let i = 0; i < playerInventory.length; i++){ 
       itemSrc = playerInventory[i][1].src
       item = playerInventory[i][1]
       console.log(itemSrc)
       document.getElementById(String(i)).src = itemSrc;
     };
-
-
-
-
-
   };
 });
 
-//function setInventory(inventaire){ 
-//  playerInventory = inventaire;
-//  console.log(playerInventory)
-//  return playerInventory
-//};
-//
-//console.log(playerInventory)
-//window.onload = function () {
-//  for (let i = 0; i < playerInventory.length; i++){
-//    itemSrc = playerInventory[i][1].src
-//    item = playerInventory[i][1]
-//
-//    
-//    console.log(itemSrc)
-//    document.getElementById(String(i)).src = itemSrc;
-//}};
+// Events
+  // Page Switching
+function pageSwitch(pageFrom, pageTo) {
+  console.log(pageFrom)
+  document.getElementById(pageFrom.toString()).style.display ="none";
+  document.getElementById(pageTo.toString()).style.display ="inline-grid";
+};

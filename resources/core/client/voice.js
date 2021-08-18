@@ -6,7 +6,7 @@ import * as native from "natives";
 
 alt.on("keyup", (keycode) => {
   switch (keycode) {
-    case 112: // Key: F1
+    case 113: // Key: F2
       alt.emitServer("voice:rangeChanged");
       break;
   }
