@@ -129,7 +129,7 @@ function isVectorEqual(vector1, vector2) {
 // Events
 alt.on('keydown', keypress);
 function keypress(key) {
-  alt.log(key)
+ // alt.log(key) //Debuger
 
   if (key == 118) {
     startNC();
