@@ -6,4 +6,5 @@ import * as native from 'natives';
 import './chat';
 import './commandes';
 import './phone';
+import './markers';
 

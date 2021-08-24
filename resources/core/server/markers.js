@@ -12,7 +12,9 @@ alt.on('entityEnterColshape', (colshape, entity) => {
     return;
   }
   if (colshape.name == "test") {
-    console.log("Un joueur entre dans la zone de test")
+    if ( entity instanceof alt.Player) {
+      alt.emitClient(entity, "isInTheZone")
+    }
   }
   
 });
