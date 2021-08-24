@@ -1,7 +1,4 @@
 /// <reference types="@altv/types-client" />
-/// <reference types="@altv/types-client" />
-/// <reference types="@altv/types-client" />
-/// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
 import * as alt from "alt-client";
 
@@ -10,7 +7,7 @@ let buffer = [];
 let loaded = false;
 let opened = false;
 
-const view = new alt.WebView("http://resource/client/html/index.html");
+const view = new alt.WebView("http://resource/client/interface/chat/index.html");
 
 function addMessage(name, text) {
   if (name) {

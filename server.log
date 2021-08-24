@@ -1,20 +1,21 @@
-[14:12:05] alt:V Server 5.3 (release)
-[14:12:05] Starting LSL DEV on localhost:7788
-[14:12:05] Loading resource core
-[14:12:05] Loaded resource core
-[14:12:05] Required server permissions:
-[14:12:05] Optional server permissions:
-[14:12:05] Starting HTTP server on localhost:7788
-[14:12:05] Main thread started (ThreadId: 1796)
-[14:12:05] VoicePacketProcess thread started (ThreadId: 12984)
-[14:12:05] VoiceStreamer thread started (ThreadId: 15992)
-[14:12:05] Colshape thread started (ThreadId: 10776)
-[14:12:05] EntityStreamer thread started (ThreadId: 3632)
-[14:12:05] Network thread started (ThreadId: 764)
-[14:12:05] Console thread started (ThreadId: 8024)
-[14:12:05] Server started
-[14:12:06] Nous avons réeussi as charger la database
-[14:12:52] -1291.5164794921875
-[14:13:14] Stopping resource core
-[14:13:14] Stopped resource core
-[14:13:14] Server shutdown
+[11:41:33] alt:V Server 5.3 (release)
+[11:41:33] Starting LSL DEV on localhost:7788
+[11:41:33] Loading resource core
+[11:41:34] Loaded resource core
+[11:41:34] Required server permissions:
+[11:41:34] Optional server permissions:
+[11:41:34] Starting HTTP server on localhost:7788
+[11:41:34] Main thread started (ThreadId: 13800)
+[11:41:34] VoicePacketProcess thread started (ThreadId: 15860)
+[11:41:34] VoiceStreamer thread started (ThreadId: 15852)
+[11:41:34] Colshape thread started (ThreadId: 5524)
+[11:41:34] EntityStreamer thread started (ThreadId: 8004)
+[11:41:34] Network thread started (ThreadId: 16932)
+[11:41:34] Console thread started (ThreadId: 9152)
+[11:41:34] Server started
+[11:41:34] Nous avons réeussi as charger la database
+[11:41:38] -53.53845977783203
+[11:41:38][Warning] Event handler at core:file:///C:/Users/Allan/Desktop/server/LSL/resources/core/server/markers.js:10 was too long 6ms
+[11:44:50] Stopping resource core
+[11:44:50] Stopped resource core
+[11:44:51] Server shutdown

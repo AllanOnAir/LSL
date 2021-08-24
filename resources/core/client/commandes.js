@@ -1,3 +1,4 @@
+/// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
 /// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-natives" />
@@ -139,55 +140,10 @@ function keypress(key) {
     stopNC();
   }
 
-  if (key == 112) {
-    openPhone();
-
-    setTimeout(function(){
-      syncInventory();
-    }, 500);
-
-  }
-}
-
-// function
-
-// phone function
-function openPhone() {
-    if (!phone) {
-      phone = new alt.WebView("http://resource/client/cellphone/index.html");
-      phone.on('close:Phone', closePhone)
-      
-    }
-    if (phoneOpened < 1) {
-      //alt.log("nous ouvrons le télephone"); // Debugger
-      phone.focus();
-      alt.showCursor(true);
-      alt.toggleGameControls(false);
-      phoneOpened = 1
-    }
-}
-
-function closePhone() {
-  alt.showCursor(false);
-  alt.toggleGameControls(true);
-  phone.destroy();
-  phone = undefined
-  phoneOpened = 0
-}
-
-function syncInventory() {
-  alt.emitServer('askForInventory');
-  alt.onServer("giveInventory", (inventaire) => {
-    phone.emit('inventaire',inventaire);
-    //alt.log(inventaire); // Debugger
-  });
 }
 
 
-
-
-
-    // noclip dunction
+// noclip function
 function startNC() {
   if(NoClip.enabled) return;
   NoClip.start();

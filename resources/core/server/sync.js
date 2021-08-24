@@ -2,6 +2,8 @@
 /// <reference types="@altv/types-natives" />
 /// <reference types="@altv/types-client" />
 /// <reference types="@altv/types-server" />
+
+// Imports
 import alt from 'alt-server';
 import * as sm from 'simplymongo';
 
@@ -9,6 +11,8 @@ import * as sm from 'simplymongo';
 const db = sm.getDatabase();
 let inventaire;
 
+
+// items
 const empty = {
   nom: 'empty',
   src: './src/items/empty.png'
@@ -30,6 +34,9 @@ async function handleSyncConnect(player) {
     const newPlayer = {
       socialclub: player.socialID,
       lastip: player.ip,
+      nom: "",
+      prenom: "",
+      surnom: "",
       x: 0,
       y: 0,
       z: 0,
@@ -64,25 +71,24 @@ async function handleSyncConnect(player) {
   
 }
 
-// Éxecutable lors de la déconnexion.
+// êvenements externe ( recolte de data et modi fication de data )
+
+    // Recolte de données pour le Télephone
+      alt.onClient("askForInventory", player => {
+        getInventory(player);
+      });
+
+      async function getInventory(player){
+        const account = await db.fetchData('socialclub', player.socialID, 'accounts'); 
+        player.data = account;
+      
+        let inventaire=player.data.inventaire;
+        alt.emitClient(player, 'giveInventory',inventaire);
+      };
 
 
 
-async function getInventory(player){
-  const position = player.pos;
-  const account = await db.fetchData('socialclub', player.socialID, 'accounts'); 
-  player.data = account;
-
-  let inventaire=player.data.inventaire;
-  alt.emitClient(player, 'giveInventory',inventaire);
-  //alt.log(inventaire)
-};
-
-alt.onClient("askForInventory", player => {
-  getInventory(player);
-});
-
-
+// Sauvegarde des données lors de la déconnexion
 
 async function handleSyncDisconnect(player){
   const position = player.pos;
