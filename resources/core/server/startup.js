@@ -4,6 +4,7 @@ import * as sm from 'simplymongo';
 import './chat';
 import './commandes';
 import './markers';
+import './weather';
 
 // Connections à la base de données !
 

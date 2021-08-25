@@ -7,4 +7,4 @@ import './chat';
 import './commandes';
 import './phone';
 import './markers';
-
+import './weather';
