@@ -54,6 +54,5 @@ function syncInventory() {
   alt.emitServer('askForInventory');
   alt.onServer("giveInventory", (inventaire) => {
     phone.emit('inventaire',inventaire);
-    //alt.log(inventaire); // Debugger
   });
 }
