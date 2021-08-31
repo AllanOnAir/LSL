@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style/charCreator.css">
+    <script src="./script/charCreator.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="contentZone" id="1">
+        <h1> IDENTIFICATION </h1>
+
+        <h3> Prénom </h3>
+        <input class="input">
+
+
+        <h3> Nom </h3>
+        <input class="input">
+
+        <h3> Date de naissance </h3>
+        <input class="input" type="date" max="2003-01-01" min="1930-01-01">
+
+        <h3> Sexe </h3>
+        <select class="input">
+          <option value="0"> Homme </option>
+          <option value="1"> Femme </option>
+        </select>
+
+      </div>
+
+    <div class="contentZone" id="2">
+      <h1> Visage </h1>
+      <h3> Père </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Mère </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Héritage </h3>
+      <input  class="input"  id="sliderHeritage" type="range" min="1" max="10" value="50" class="slider" id="myRange">
+
+
+
+      <h3> Couleur de peau </h3>
+      <select class="input">
+
+      </select>
+
+    </div>      
+      
+
+    <div class="contentZone" id="3">
+      <h1> Pilosité </h1>
+
+      <h3> Cheveux </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Couleur de Cheveux </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Barbe </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Couleur de Barbe </h3>
+      <select class="input">
+
+      </select>
+    </div>
+
+    <div class="contentZone" id="4">
+      <h1> Détailes </h1>
+
+      <h3> Couleur des yeux </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Sourcils </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Couleur des Sourcils </h3>
+      <select class="input">
+
+      </select>
+
+      <h3> Vêtements de départ </h3>
+      <input  class="input"  id="sliderHeritage" type="range" min="1" max="5" value="50" class="slider" id="myRange">
+
+      </select>
+    </div>
+      
+
+    <div class="contentZone" id="5">
+        <h1> Vérification </h1>
+
+
+        <div id="data">
+          <h3> nom : <span></span> <span></span> </h3>
+
+
+          <h3> Âge : <span></span></h3>
+
+          <h3> Sexe : <span></span></h3>
+
+        </div>
+    </div>
+      
+      
+      
+      
+      
+      
+    
+      <!-- Next page -->
+      <button  class="arrowBTN" id="next"><img src="./src/next.png" id="nextIMG" onclick="nextPage()"></button>
+
+    </div>
+
+  </body>
+</html>

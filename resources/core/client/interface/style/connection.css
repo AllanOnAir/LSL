@@ -1,0 +1,68 @@
+body {
+  background-color: #202731;
+}
+
+.button {
+  background-color: #f6efee;
+  border: 3px solid white;
+}
+
+.button:hover {
+  transition: 0.3s;
+  border-color: #202731;
+  background-color: #da4167;
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+#charButton {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#connection {
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+
+  color: #0e0e0ea4;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  position: absolute;
+  top: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#divStatut {
+  color: #06d6a0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+img {
+  opacity: 0.5;
+  size: auto;
+}
