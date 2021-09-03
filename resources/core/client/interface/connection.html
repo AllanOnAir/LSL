@@ -4,11 +4,12 @@
     <script src="./script/connection.js"></script>
   </head>
   <body>
-      <button id="charButton" class="button"> <img src="./src/+.png"></button>
-      <button id="connection" class="button"> Connection Discord</button>
-      <div id="divStatut">
-        <p id="statut"> Connecté </p>
-      </div>
-
+        <button id="charButton" class="button" onclick = tryToConnect()> <img src="./src/+.png"></button>
+        <div id="divStatut">
+            <input class="input" type="password" id="password">
+            <button class="button" id="enterBTN" onclick= checkdata()> <img src="src/next.png"></button>
+            <p id="statutco"> Connecté </p>
+            <p id="statutN"> Non Connecté </p>
+        </div>
   </body>
 </html>

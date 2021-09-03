@@ -25,7 +25,14 @@
     "@altv/types-webview": "^1.0.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.1",
     "mongodb": "^4.0.1",
-    "simplymongo": "^2.1.1"
+    "simplymongo": "^2.1.1",
+    "sjcl": "^1.0.8"
   }
 }

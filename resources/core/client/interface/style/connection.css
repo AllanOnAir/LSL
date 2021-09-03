@@ -57,12 +57,47 @@ body {
   position: absolute;
   top: 60%;
   bottom: 0;
-  left: 0;
+  left: 40px;
   right: 0;
   margin: auto;
+}
+
+#divStatut > p {
+  margin-right: 35px;
+}
+
+#statutN {
+  color: #da4167;
 }
 
 img {
   opacity: 0.5;
   size: auto;
+}
+
+.input {
+  margin-top: 0px;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 15px;
+  border: 3px solid white;
+  width: 150px;
+  height: 30px;
+  box-shadow: 5px 5px 3px #00000055;
+}
+
+#enterBTN {
+  position: relative;
+  top: 7px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+#enterBTN > img {
+  width: 15px;
+  height: 20px;
 }

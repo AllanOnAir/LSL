@@ -1,0 +1,78 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  background-color: #202731c4;
+}
+
+#menu {
+  position: absolute;
+  align-content: center;
+  background-color: #202731;
+  width: 60px;
+  height: 100%;
+}
+
+.navBTN {
+  background-color: #f6efee;
+  position: relative;
+  margin-left: 4px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid white;
+  width: 50px;
+  height: 50px;
+}
+
+.navBTN:hover {
+  transition: 0.3s;
+  border-color: #202731;
+  background-color: #da4167;
+}
+
+.navicon {
+  width: 90%;
+  opacity: 0.5;
+}
+
+#inventaire {
+  margin-left: 250px;
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.itemSocket {
+  margin-top: 40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  background-color: #2027316b;
+}
+
+.itemBTN {
+  position: relative;
+  top: 100px;
+  margin-left: 22px;
+  border-radius: 10px;
+  width: 40px;
+  height: 30px;
+  background-color: #f6efee;
+  border: 3px solid white;
+  color: #0e0e0ea4;
+  font-weight: 700;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.itemBTN:hover {
+  transition: 0.3s;
+  border-color: #202731;
+  background-color: #da4167;
+}
+
+.itemBTN:active {
+  transform: translateY(4px);
+}
