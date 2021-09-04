@@ -1,3 +1,5 @@
+/// <reference types="@altv/types-client" />
+/// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
 import * as playerData from "./data"
@@ -47,6 +49,13 @@ function creationDePersonnage(){
     createPedEditCamera();
     setFov(50);
     setZPos(0.6);
+    
+    native.setPedHeadBlendData(alt.Player.local, 0, 0, 0, 0, 0, 0, 0, 0, 0, false);
+
+    charCreator.on("changeSex", sex =>{
+        alt.emitServer("changePedSex", (player, sex))
+    })
+
 
     alt.emitServer('charCreation', player)
 

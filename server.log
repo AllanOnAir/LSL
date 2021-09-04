@@ -1,18 +1,19 @@
-[22:27:56] alt:V Server 5.3 (release)
-[22:27:56] Starting LSL DEV on localhost:7788
-[22:27:56] Loading resource core
-[22:27:57] Loaded resource core
-[22:27:57] Required server permissions:
-[22:27:57] Optional server permissions:
-[22:27:57] Starting HTTP server on localhost:7788
-[22:27:57] Main thread started (ThreadId: 4064)
-[22:27:57] VoicePacketProcess thread started (ThreadId: 12384)
-[22:27:57] Colshape thread started (ThreadId: 14216)
-[22:27:57] VoiceStreamer thread started (ThreadId: 10908)
-[22:27:57] EntityStreamer thread started (ThreadId: 5968)
-[22:27:57] Network thread started (ThreadId: 216)
-[22:27:57] Console thread started (ThreadId: 13468)
-[22:27:57] Server started
-[23:01:48] Stopping resource core
-[23:01:48] Stopped resource core
-[23:01:48] Server shutdown
+[16:26:39] alt:V Server 5.3 (release)
+[16:26:39] Starting LSL DEV on localhost:7788
+[16:26:39] Loading resource core
+[16:26:40] Loaded resource core
+[16:26:40] Required server permissions:
+[16:26:40] Optional server permissions:
+[16:26:40] Starting HTTP server on localhost:7788
+[16:26:40] Main thread started (ThreadId: 12956)
+[16:26:40] VoicePacketProcess thread started (ThreadId: 10644)
+[16:26:40] VoiceStreamer thread started (ThreadId: 8240)
+[16:26:40] Colshape thread started (ThreadId: 10332)
+[16:26:40] EntityStreamer thread started (ThreadId: 6808)
+[16:26:40] Network thread started (ThreadId: 17940)
+[16:26:40] Console thread started (ThreadId: 14696)
+[16:26:40] Server started
+[16:27:18][Warning] Event handler at core:file:///C:/Users/Allan/Desktop/server/LSL/resources/core/server/connexion.js:7 was too long 7ms
+[16:29:56] Stopping resource core
+[16:29:56] Stopped resource core
+[16:29:57] Server shutdown
