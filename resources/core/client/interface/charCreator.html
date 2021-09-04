@@ -23,8 +23,8 @@
 
         <h3> Sexe </h3>
         <select class="input" id="sexePicking" onchange="changeSexe(event)">
-          <option value="0"> Homme </option>
-          <option value="1"> Femme </option>
+          <option value="mp_m_freemode_01"> Homme </option>
+          <option value="mp_f_freemode_01"> Femme </option>
         </select>
 
       </div>
@@ -32,23 +32,77 @@
     <div class="contentZone" id="2">
       <h1> Visage </h1>
       <h3> Père </h3>
-      <select class="input">
-
+      <select class="input" id="dad" onchange="changeFace(event)">
+        <option value="0"> Edan </option>
+        <option value="1"> Bob </option>
+        <option value="2"> Edan </option>
+        <option value="3"> Bob </option>
+        <option value="4"> Edan </option>
+        <option value="5"> Bob </option>
+        <option value="6"> Edan </option>
+        <option value="7"> Bob </option>
+        <option value="8"> Edan </option>
+        <option value="9"> Bob </option>
+        <option value="10"> Edan </option>
+        <option value="11"> Bob </option>
+        <option value="12"> Edan </option>
+        <option value="13"> Bob </option>
+        <option value="14"> Edan </option>
+        <option value="15"> Bob </option>
+        <option value="16"> Edan </option>
+        <option value="17"> Bob </option>
+        <option value="18"> Edan </option>
+        <option value="19"> Bob </option>
+        <option value="20"> Bob </option>
+        <option value="42"> Rasnov </option>
+        <option value="43"> Nico </option>
+        <option value="44"> Martin </option>
       </select>
 
       <h3> Mère </h3>
-      <select class="input">
+      <select class="input" id="mom" onchange="changeFace(event)">
+        <option value="21"> Edan </option>
+        <option value="22"> Bob </option>
+        <option value="23"> Edan </option>
+        <option value="23"> Bob </option>
+        <option value="24"> Edan </option>
+        <option value="25"> Bob </option>
+        <option value="26"> Edan </option>
+        <option value="27"> Bob </option>
+        <option value="28"> Edan </option>
+        <option value="29"> Bob </option>
+        <option value="30"> Edan </option>
+        <option value="31"> Bob </option>
+        <option value="32"> Edan </option>
+        <option value="33"> Bob </option>
+        <option value="34"> Edan </option>
+        <option value="35"> Bob </option>
+        <option value="36"> Edan </option>
+        <option value="37"> Bob </option>
+        <option value="38"> Edan </option>
+        <option value="39"> Bob </option>
+        <option value="41"> Bob </option>
+        <option value="45"> Rasnov </option>
 
       </select>
 
       <h3> Héritage </h3>
-      <input  class="input"  id="sliderHeritage" type="range" min="1" max="10" value="50" class="slider" id="myRange">
+      <input  class="input"  id="sliderHeritage" type="range" min="0" max="200" value="10" class="slider" id="myRange" onchange="changeFace(event)">
 
 
 
       <h3> Couleur de peau </h3>
-      <select class="input">
-
+      <select class="input" id="SkinColor"onchange="changeFace(event)">
+        <option value="1"> Caucasien 01 </option>
+        <option value="2"> Caucasien 02 </option>
+        <option value="3"> Caucasien 03 </option>
+        <option value="4"> Afro-Américain 01 </option>
+        <option value="5"> Afro-Américain 02 </option>
+        <option value="6"> Afro-Américain 03 </option>
+        <option value="7"> Espanique 01 </option>
+        <option value="8"> Espanique 02 </option>
+        <option value="9"> Espanique 03 </option>
+        <option value="10"> Asiatique 01 </option>
       </select>
 
     </div>      

@@ -43,7 +43,6 @@ function userConnected(){
 function creationDePersonnage(){
     charCreator = new alt.WebView("http://resource/client/interface/charCreator.html");
     charCreator.focus();
-    alt.showCursor(true);
     alt.toggleGameControls(false);
 
     createPedEditCamera();
@@ -56,6 +55,33 @@ function creationDePersonnage(){
         alt.emitServer("changePedSex", (player, sex))
     })
 
+    charCreator.on("shapeChange", playerSkin =>{
+
+        alt.log(playerSkin)
+
+        native.setPedHeadBlendData(
+            alt.Player.local, 
+            playerSkin.shapeFirstID, 
+            playerSkin.shapeSecondID,
+            0,
+            playerSkin.skinFirstID, // skin 1
+            playerSkin.skinSecondID, // skin 2
+            0, // skin 3
+            playerSkin.shapeMix,
+            playerSkin.skinMix,
+            0, // thirdMix
+            false
+        );
+    })
+
+
+    charCreator.on("characterCreated", playerSkin => {
+        charCreator.destroy();
+        charCreator = undefined
+        alt.toggleGameControls(true);
+        destroyPedEditCamera();
+        alt.showCursor(false);
+    })
 
     alt.emitServer('charCreation', player)
 
