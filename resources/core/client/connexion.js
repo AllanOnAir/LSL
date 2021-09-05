@@ -61,6 +61,7 @@ function creationDePersonnage(){
     })
 
     charCreator.on("shapeChange", playerSkin =>{
+        native.clearPedDecorations(alt.Player.local)
 
         // Changer La forme du visage
         native.setPedHeadBlendData(
@@ -76,11 +77,18 @@ function creationDePersonnage(){
             0, // thirdMix
             false
         );
-        // Changement pilosité
+        // Changement pilosité ( Cheveux)
+        native.setPedComponentVariation(alt.Player.local, 2, playerSkin.hairStyle, 0, 0);
+        native.addPedDecorationFromHashes(alt.Player.local, native.getHashKey(playerSkin.collection),  native.getHashKey(playerSkin.overlay));
+        // Changement de pilosité ( Facial )
+        native.setPedHeadOverlay(alt.Player.local, 2, playerSkin.sourcils, 1);
+        native.setPedHeadOverlayColor(alt.Player.local, 2,1, playerSkin.sourcilsColor, playerSkin.sourcilsColor)
+
+    
+
 
         // Changement Couleur des yeux
         native.setPedEyeColor(alt.Player.local, playerSkin.eyeColor);
-
 
     })
 

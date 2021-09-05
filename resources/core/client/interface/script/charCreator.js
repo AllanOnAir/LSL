@@ -1,4 +1,4 @@
-let actualpage = 4
+let actualpage = 3
 
 const HairOverlaysMale = {
     0: { collection: 'mpbeach_overlays', overlay: 'FM_Hair_Fuzz' },
@@ -179,7 +179,13 @@ let playerSkin = {
     skinMix: 0,
     // Couleur des Yeux
     eyeColor: 0,
-    // Pilosité 
+    // Cheveux 
+    hairStyle: 0,
+    collection: "",
+    overlay: "",
+    // Sourcils
+    sourcils: 0,
+    sourcilsColor: 0,
 
 
 
@@ -203,7 +209,10 @@ let sexe = "mp_m_freemode_01"
 
 function changeSexe(event){
     sexe = document.getElementById("sexePicking").options[document.getElementById("sexePicking").selectedIndex].value
-    alt.emit("changeSex", sexe)
+    if("alt" in window) {
+        alt.emit("changeSex", sexe)
+    }
+
 }
 
 function changeFace(event){
@@ -219,12 +228,29 @@ function changeFace(event){
     playerSkin.skinSecondID =  colorMix[valeur].skinSecondID
     playerSkin.skinMix =  colorMix[valeur].skinMix
 
+    // Hair Style
+    playerSkin.hairStyle = parseInt(document.getElementById("hairStyle").value)
+
+         // Pour les degradés sur les cotés de coupe de cheveux comme en online
+    if ( sexe = "mp_m_freemode_01"){
+        playerSkin.collection = HairOverlaysMale[document.getElementById("hairStyle").value].collection
+        playerSkin.overlay = HairOverlaysMale[document.getElementById("hairStyle").value].overlay
+    }
+    else {
+        playerSkin.collection = HairOverlaysFemale[document.getElementById("hairStyle").value].collection
+        playerSkin.overlay = HairOverlaysFemale[document.getElementById("hairStyle").value].overlay
+    }
+
+    // Sourcils
+    playerSkin.sourcils = parseInt(document.getElementById("sourcils").value)
+    playerSkin.sourcilsColor = parseInt(document.getElementById("sourcilsColor").value)
+
     // Eye Color
     playerSkin.eyeColor = parseInt(document.getElementById("eyeColor").value)
 
 
     // Debuger
-    console.log(playerSkin.eyeColor)
+    console.log(playerSkin.sourcilsColor)
     if ("alt" in window) {
         alt.emit("shapeChange", playerSkin)
     }

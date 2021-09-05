@@ -112,9 +112,7 @@
       <h1> Pilosité </h1>
 
       <h3> Cheveux </h3>
-      <select class="input">
-
-      </select>
+      <input class="input" type="range" id="hairStyle" min="0" max="72" onchange="changeFace(event)">
 
       <h3> Couleur de Cheveux </h3>
       <select class="input">
@@ -139,14 +137,10 @@
       <input id="eyeColor" type="range" min="0" max="15" class="input" onchange="changeFace()">
 
       <h3> Sourcils </h3>
-      <select class="input">
-
-      </select>
+      <input class="input" type="range" id="sourcils" min="0" max="33" onchange="changeFace(event)">
 
       <h3> Couleur des Sourcils </h3>
-      <select class="input">
-
-      </select>
+      <input class="input" type="range" id="sourcilsColor" min="0" max="64" onchange="changeFace(event)">
 
       <h3> Vêtements de départ </h3>
       <input  class="input"  id="startingClothes" type="range" min="1" max="5" value="50" class="slider" id="myRange">
