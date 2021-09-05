@@ -57,8 +57,7 @@ function creationDePersonnage(){
 
     charCreator.on("shapeChange", playerSkin =>{
 
-        alt.log(playerSkin)
-
+        // Changer La forme du visage
         native.setPedHeadBlendData(
             alt.Player.local, 
             playerSkin.shapeFirstID, 
@@ -72,6 +71,12 @@ function creationDePersonnage(){
             0, // thirdMix
             false
         );
+        // Changement pilosité
+
+        // Changement Couleur des yeux
+        native.setPedEyeColor(alt.Player.local, playerSkin.eyeColor);
+
+
     })
 
 
