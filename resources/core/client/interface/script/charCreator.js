@@ -243,12 +243,12 @@ function loadFirstPage(){
 
 function nextPage(){
     if (actualpage == 5 ) { compilation() }
-    document.getElementById(actualpage.toString()).style.display = "none"
-    actualpage ++
-    document.getElementById(actualpage.toString()).style.display = "block"
-    console.log(actualpage)
-
-
+    else {
+        document.getElementById(actualpage.toString()).style.display = "none"
+        actualpage ++
+        document.getElementById(actualpage.toString()).style.display = "block"
+        console.log(actualpage)
+    }
 }
 
 function lastPage(){
