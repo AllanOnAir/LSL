@@ -41,13 +41,18 @@ function userConnected(){
 }
 
 function creationDePersonnage(){
+    alt.emitServer('charCreation', player)
+
     charCreator = new alt.WebView("http://resource/client/interface/charCreator.html");
     charCreator.focus();
     alt.toggleGameControls(false);
 
-    createPedEditCamera();
-    setFov(50);
-    setZPos(0.6);
+    alt.setTimeout(( ) =>{
+        createPedEditCamera();
+        setFov(50);
+        setZPos(0.6);
+    },2000);
+
     
     native.setPedHeadBlendData(alt.Player.local, 0, 0, 0, 0, 0, 0, 0, 0, 0, false);
 
@@ -87,9 +92,6 @@ function creationDePersonnage(){
         destroyPedEditCamera();
         alt.showCursor(false);
     })
-
-    alt.emitServer('charCreation', player)
-
 
 }
 
