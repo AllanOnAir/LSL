@@ -1,9 +1,9 @@
-/// <reference types="@altv/types-client" />
 * {
   margin: 0px;
 }
 
 #content {
+  margin: 0px;
   position: absolute;
   text-align: center;
   background-color: #202731;
@@ -13,6 +13,7 @@
 }
 
 .contentZone {
+  margin: 0px;
   width: 80%;
   height: 80%;
   margin: auto;

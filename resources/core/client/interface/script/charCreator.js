@@ -1,5 +1,7 @@
-let actualpage = 3
+let actualpage = 1
 
+
+// Too much value to explain ( Basicly all the hair overlay pick by the haircut ID)
 const HairOverlaysMale = {
     0: { collection: 'mpbeach_overlays', overlay: 'FM_Hair_Fuzz' },
     1: { collection: 'multiplayer_overlays', overlay: 'NG_M_Hair_001' },
@@ -168,30 +170,7 @@ const HairOverlaysFemale = {
     }
 };
 
-let playerSkin = {
-
-    // Modelage Du visage
-    shapeFirstID: 0,
-    shapeSecondID: 0,
-    skinFirstID: 0,
-    skinSecondID: 0,
-    shapeMix: 0,
-    skinMix: 0,
-    // Couleur des Yeux
-    eyeColor: 0,
-    // Cheveux 
-    hairStyle: 0,
-    collection: "",
-    overlay: "",
-    // Sourcils
-    sourcils: 0,
-    sourcilsColor: 0,
-
-
-
-}
-
-
+// Skin Color Mix You want to create ! i suggest to comment the name of the skin tone. ( skinID are parent face https://gtaforums.com/topic/858970-all-gtao-face-ids-pedset_ped_head_blend_data-explained/) 
 colorMix = {
     1: { skinFirstID: 0, skinSecondID: 0, skinMix: 0},
     2: { skinFirstID: 19, skinSecondID: 4, skinMix: 0},
@@ -203,11 +182,33 @@ colorMix = {
 
 
 
+// Player Skin data ( Every parameter the user can modify to create a great character )
+
+let playerSkin = {
+    // Head Shape Parameter
+    shapeFirstID: 0,
+    shapeSecondID: 0,
+    skinFirstID: 0,
+    skinSecondID: 0,
+    shapeMix: 0,
+    skinMix: 0,
+    // Cheveux 
+    hairStyle: 0,
+    collection: "",
+    overlay: "",
+    // Details
+    eyeColor: 0,
+    sourcils: 0,
+    sourcilsColor: 0,
+}
+
+
 
 let sexe = "mp_m_freemode_01"
 
 
 function changeSexe(event){
+    // Get sex selected and send it trought client then server to change the ped of the character
     sexe = document.getElementById("sexePicking").options[document.getElementById("sexePicking").selectedIndex].value
     if("alt" in window) {
         alt.emit("changeSex", sexe)
@@ -217,21 +218,22 @@ function changeSexe(event){
 
 function changeFace(event){
 
-    // Face Shape
+    // Face Shape | Dad Face | Mom Face |  Mix of the 2 (-1 to 1)|
     playerSkin.shapeFirstID = parseInt(document.getElementById("dad").options[document.getElementById("dad").selectedIndex].value)
     playerSkin.shapeSecondID = parseInt(document.getElementById("mom").options[document.getElementById("mom").selectedIndex].value)
     playerSkin.shapeMix = (document.getElementById("sliderHeritage").value -100) / 100
     
-    // Skin Color
+    // Skin Color ( color mix can be created at line 175)
     let valeur = document.getElementById("SkinColor").value
     playerSkin.skinFirstID = colorMix[valeur].skinFirstID
     playerSkin.skinSecondID =  colorMix[valeur].skinSecondID
     playerSkin.skinMix =  colorMix[valeur].skinMix
 
-    // Hair Style
+    // Hair Style and head overlay
     playerSkin.hairStyle = parseInt(document.getElementById("hairStyle").value)
 
-         // Pour les degradés sur les cotés de coupe de cheveux comme en online
+// -------------------------------------------NEED TO ADD HAIRCOLOR HERE !!!!-----------------------------------------------------
+
     if ( sexe = "mp_m_freemode_01"){
         playerSkin.collection = HairOverlaysMale[document.getElementById("hairStyle").value].collection
         playerSkin.overlay = HairOverlaysMale[document.getElementById("hairStyle").value].overlay
@@ -241,34 +243,37 @@ function changeFace(event){
         playerSkin.overlay = HairOverlaysFemale[document.getElementById("hairStyle").value].overlay
     }
 
-    // Sourcils
+// -------------------------------------------NEED TO ADD BEARD HERE !!!!-----------------------------------------------------
+
+
+    
+
+
+    // eyebrow ( color and Shape )
     playerSkin.sourcils = parseInt(document.getElementById("sourcils").value)
     playerSkin.sourcilsColor = parseInt(document.getElementById("sourcilsColor").value)
 
-    // Eye Color
+    // EyeColor
     playerSkin.eyeColor = parseInt(document.getElementById("eyeColor").value)
 
 
     // Debuger
     console.log(playerSkin.sourcilsColor)
+
+    // Update the Character
     if ("alt" in window) {
         alt.emit("shapeChange", playerSkin)
     }
 }
 
-
-
-
-
-
+// Basic WebView Function
 window.onload = loadFirstPage; 
-
 function loadFirstPage(){
   document.getElementById(actualpage).style.display = "block"
 }
 
 function nextPage(){
-    if (actualpage == 5 ) { compilation() }
+    if (actualpage == 5  ) { compilation() } // Change actualpage == to the value the id of the last page
     else {
         document.getElementById(actualpage.toString()).style.display = "none"
         actualpage ++

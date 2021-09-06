@@ -8,30 +8,28 @@ window.onload = function() {
     statutCo = document.getElementById("statutco")
     statutNco = document.getElementById("statutN")
 
-    // Afficher le statut valable
+    // Show if the user is connected or not
     statutCo.style.display = "none";
     statutNco.style.display = "block";
 }
 
 
 function checkdata() {
-    // Attraper la valeur du code dans une variable
+    // Catch the value of the password
     userCode = document.getElementById("password").value
-    // verifier la variable dans la base de donnés
+    // Check if the user exist if not kick the player
 
-    // emit les information du client à la base de données
+    // Fetch the user information from de DB
 
-    // modifier le button de connexion / création de personnage
+    // The user can now join the game or create a character.
     canConnect = true
     statutCo.style.display = "block";
     statutNco.style.display = "none";
     tentatives += 1
 }
 
-
 function tryToConnect(){
     if (canConnect == false){
-        alert("Vous devez vous connecté avant tout !")
         tentatives += 1
     }
     else {
@@ -39,8 +37,4 @@ function tryToConnect(){
             alt.emit('userConnected')
         }
     }
-}
-
-if (tentatives == 3){
-    console.log("Le joueur es ban 10 minutes")
 }

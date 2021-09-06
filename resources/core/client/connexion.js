@@ -36,7 +36,7 @@ function userConnected(){
     else{
         alt.showCursor(false);
         alt.toggleGameControls(true);
-        spawnerLeJoueur()
+        spawnThePlayer()
     }
 }
 
@@ -51,7 +51,7 @@ function creationDePersonnage(){
         createPedEditCamera();
         setFov(50);
         setZPos(0.6);
-    },2000);
+    },1200);
 
     
     native.setPedHeadBlendData(alt.Player.local, 0, 0, 0, 0, 0, 0, 0, 0, 0, false);
@@ -63,7 +63,7 @@ function creationDePersonnage(){
     charCreator.on("shapeChange", playerSkin =>{
         native.clearPedDecorations(alt.Player.local)
 
-        // Changer La forme du visage
+        // Face Shape and skin tone
         native.setPedHeadBlendData(
             alt.Player.local, 
             playerSkin.shapeFirstID, 
@@ -77,17 +77,22 @@ function creationDePersonnage(){
             0, // thirdMix
             false
         );
-        // Changement pilosité ( Cheveux)
+        // Hair Style
         native.setPedComponentVariation(alt.Player.local, 2, playerSkin.hairStyle, 0, 0);
+// -------------------------------------------NEED TO ADD HAIRCOLOR HERE !!!!-----------------------------------------------------
         native.addPedDecorationFromHashes(alt.Player.local, native.getHashKey(playerSkin.collection),  native.getHashKey(playerSkin.overlay));
-        // Changement de pilosité ( Facial )
+
+
+
+// -------------------------------------------NEED TO ADD BEARD HERE !!!!-----------------------------------------------------
+        // EyeBrow
         native.setPedHeadOverlay(alt.Player.local, 2, playerSkin.sourcils, 1);
         native.setPedHeadOverlayColor(alt.Player.local, 2,1, playerSkin.sourcilsColor, playerSkin.sourcilsColor)
 
     
 
 
-        // Changement Couleur des yeux
+        // Eye Color
         native.setPedEyeColor(alt.Player.local, playerSkin.eyeColor);
 
     })
@@ -103,6 +108,6 @@ function creationDePersonnage(){
 
 }
 
-function spawnerLeJoueur(){
+function spawnThePlayer(){
 
 }
