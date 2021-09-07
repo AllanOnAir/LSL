@@ -84,7 +84,7 @@ function creationDePersonnage(){
 
 // -------------------------------------------NEED TO ADD HAIRCOLOR HERE !!!!-----------------------------------------------------
         native.addPedDecorationFromHashes(alt.Player.local, native.getHashKey(playerSkin.collection),  native.getHashKey(playerSkin.overlay));
-        native.setPedHairColor(alt.Player.local, playerSkin.hairColor, playerSkin.hairColor);
+        native.setPedHairColor(alt.Player.local, playerSkin.hairColor, playerSkin.hairColor2);
 
 
 

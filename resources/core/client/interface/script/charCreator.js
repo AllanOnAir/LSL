@@ -1,4 +1,4 @@
-let actualpage = 1
+let actualpage = 3
 
 
 // Too much value to explain ( Basicly all the hair overlay pick by the haircut ID)
@@ -193,6 +193,7 @@ let playerSkin = {
     // Cheveux 
     hairStyle: 0,
     hairColor: 0,
+    hairColor2: 0,
     collection: "",
     overlay: "",
     // Details
@@ -234,8 +235,9 @@ function changeFace(event){
     // Hair Style and head overlay
     playerSkin.hairStyle = parseInt(document.getElementById("hairStyle").value)
     playerSkin.hairColor = parseInt(document.getElementById("hairColor").value)
+    playerSkin.hairColor2 = parseInt(document.getElementById("hairColor2").value)
 
-    if ( sexe = "mp_m_freemode_01"){
+    if ( sex = "mp_m_freemode_01"){
         playerSkin.collection = HairOverlaysMale[document.getElementById("hairStyle").value].collection
         playerSkin.overlay = HairOverlaysMale[document.getElementById("hairStyle").value].overlay
     }
@@ -277,20 +279,19 @@ function loadFirstPage(){
 
 function nextPage(){
     if (actualpage == 5  ) { compilation() } // Change actualpage == to the value the id of the last page
+    
     else {
         document.getElementById(actualpage.toString()).style.display = "none"
-        actualpage ++
+        if ( sex == "mp_f_freemode_01" && actualpage == 3) {actualpage = 5 } else {actualpage ++}
         document.getElementById(actualpage.toString()).style.display = "block"
-        console.log(actualpage)
     }
 }
 
 function lastPage(){
     if ( actualpage > 1 ) {
         document.getElementById(actualpage.toString()).style.display = "none"
-        actualpage --
+        if ( sex == "mp_f_freemode_01" && actualpage == 5) {actualpage = 3 } else {actualpage --}
         document.getElementById(actualpage.toString()).style.display = "block"
-        console.log(actualpage)
     }
 
   }
