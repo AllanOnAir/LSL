@@ -1,4 +1,4 @@
-let actualpage = 3
+let actualpage = 1
 
 
 // Too much value to explain ( Basicly all the hair overlay pick by the haircut ID)
