@@ -170,6 +170,7 @@ const HairOverlaysFemale = {
     }
 };
 
+
 // Skin Tone Mix You want to create ! i suggest to comment the name of the skin tone. ( skinID are parent face https://gtaforums.com/topic/858970-all-gtao-face-ids-pedset_ped_head_blend_data-explained/) 
 SkinToneMix = {
     1: { skinFirstID: 0, skinSecondID: 0, skinMix: 0},
@@ -180,10 +181,7 @@ SkinToneMix = {
     6: { skinFirstID: 27, skinSecondID: 6, skinMix: 0},
 }
 
-
-
 // Player Skin data ( Every parameter the user can modify to create a great character )
-
 let playerSkin = {
     // Head Shape Parameter
     shapeFirstID: 0,
@@ -202,6 +200,8 @@ let playerSkin = {
     eyebrow: 0,
     eyebrowColor: 0,
     beard: 0,
+    beardColor: 0,
+    beardOpacity: 0,
 }
 
 
@@ -235,8 +235,6 @@ function changeFace(event){
     playerSkin.hairStyle = parseInt(document.getElementById("hairStyle").value)
     playerSkin.hairColor = parseInt(document.getElementById("hairColor").value)
 
-// -------------------------------------------NEED TO ADD HAIRCOLOR HERE !!!!-----------------------------------------------------
-
     if ( sexe = "mp_m_freemode_01"){
         playerSkin.collection = HairOverlaysMale[document.getElementById("hairStyle").value].collection
         playerSkin.overlay = HairOverlaysMale[document.getElementById("hairStyle").value].overlay
@@ -248,6 +246,8 @@ function changeFace(event){
 
 // -------------------------------------------NEED TO ADD BEARD HERE !!!!-----------------------------------------------------
     playerSkin.beard = parseInt(document.getElementById("beard").value)
+    playerSkin.beardColor = parseInt(document.getElementById("beardColor").value)
+    playerSkin.beardOpacity = parseInt(document.getElementById("beardOpacity").value)/100
 
     
 

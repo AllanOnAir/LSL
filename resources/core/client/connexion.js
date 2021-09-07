@@ -10,6 +10,7 @@ let request = false
 let charCreator
 let connexion
 let player = alt.player
+let playersex = "mp_m_freemode_01"
 
 alt.onServer("connexion", player =>{
     connexion = new alt.WebView("http://resource/client/interface/connection.html");
@@ -58,6 +59,7 @@ function creationDePersonnage(){
 
     charCreator.on("changeSex", sex =>{
         alt.emitServer("changePedSex", (player, sex))
+        playersex = sex
     })
 
     charCreator.on("shapeChange", playerSkin =>{
@@ -87,12 +89,15 @@ function creationDePersonnage(){
 
 
 // -------------------------------------------NEED TO ADD BEARD HERE !!!!-----------------------------------------------------
+        if (playersex == "mp_m_freemode_01"){
+            native.setPedHeadOverlay(alt.Player.local, 1, playerSkin.beard, playerSkin.beardOpacity);
+            native.setPedHeadOverlayColor(alt.Player.local, 1, 2, playerSkin.beardColor, playerSkin.beardColor);
+        }
 
-        native.setPedHeadOverlay(alt.Player.local, 1, playerSkin.beard, 1);
-        native.setPedHeadOverlayColor(alt.Player.local, 1, 2, playerSkin.Haircolor, playerSkin.hairColor);
 
         // EyeBrow
-        native.setPedHeadOverlay(alt.Player.local, 2, playerSkin.sourcils, 1);
+
+        native.setPedHeadOverlay(alt.Player.local, 2, playerSkin.eyebrow, 1);
         native.setPedHeadOverlayColor(alt.Player.local, 2,1, playerSkin.eyebrowColor, playerSkin.eyebrowColor)
 
     

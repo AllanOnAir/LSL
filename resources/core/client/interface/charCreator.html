@@ -109,43 +109,51 @@
 
 
         <div class="contentZone" id="3">
-          <h1> Pilosité </h1>
+          <h1> Cheveux </h1>
 
-          <h3> Cheveux </h3>
+          <h3> Type de cheveux </h3>
           <input class="input" type="range" id="hairStyle" min="0" max="72" value="0" onchange="changeFace(event)">
 
           <h3> Couleur de Cheveux </h3>
           <input  class="input"  id="hairColor" type="range" min="0" max="63" value="0" class="slider" id="myRange" onchange="changeFace(event)">
 
-          <h3> Barbe </h3>
-          <input  class="input"  id="beard" type="range" min="0" max="28" value="0" class="slider" id="myRange" onchange="changeFace(event)">
+        </div>
+        <!-- Ajouter une page spécial Pilosité homme ( barbe et couleur de barbe et opacité de barbe ) -->
+        <div class="contentZone" id="4">
+            <h1> Type de barbe </h1>
 
-          <h3> Couleur de Barbe </h3>
-          <select class="input">
+            <h3> Barbe </h3>
+            <input  class="input"  id="beard" type="range" min="0" max="28" value="0" class="slider" id="myRange" onchange="changeFace(event)">
+  
+            <h3> Couleur de Barbe </h3>
+            <input  class="input"  id="beardColor" type="range" min="0" max="78" value="78" class="slider" id="myRange" onchange="changeFace(event)">
 
-          </select>
+            <h3> Opacité de Barbe </h3>
+            <input  class="input"  id="beardOpacity" type="range" min="0" max="100" value="0" class="slider" id="myRange" onchange="changeFace(event)">
+
+
         </div>
 
-        <div class="contentZone" id="4">
+        <div class="contentZone" id="5">
           <h1> Détailes </h1>
 
           <h3> Couleur des yeux </h3>
-          <input id="eyeColor" type="range" min="0" max="15" class="input" onchange="changeFace()">
+          <input id="eyeColor" type="range" min="0" max="15" value="0" class="input" onchange="changeFace()">
 
           <h3> Sourcils </h3>
-          <input class="input" type="range" id="eyebrow" min="0" max="33" onchange="changeFace(event)">
+          <input class="input" type="range" id="eyebrow" value="0" min="0" max="33" onchange="changeFace(event)">
 
           <h3> Couleur des Sourcils </h3>
-          <input class="input" type="range" id="eyebrowColor" min="0" max="64" onchange="changeFace(event)">
+          <input class="input" type="range" id="eyebrowColor" value="0" min="0" max="64" onchange="changeFace(event)">
 
           <h3> Vêtements de départ </h3>
-          <input  class="input"  id="startingClothes" type="range" min="1" max="5" value="50" class="slider" id="myRange">
+          <input  class="input"  id="startingClothes" type="range" min="1" max="5" value="1" class="slider" id="myRange">
 
           </input>
         </div>
 
 
-        <div class="contentZone" id="5">
+        <div class="contentZone" id="6">
             <h1> Vérification </h1>
 
 
