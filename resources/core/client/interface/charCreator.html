@@ -22,7 +22,7 @@
         <input class="input" type="date" max="2003-01-01" min="1930-01-01">
 
         <h3> Sexe </h3>
-        <select class="input" id="sexePicking" onchange="changeSexe(event)">
+        <select class="input" id="sexPicking" onchange="changeSexe(event)">
           <option value="mp_m_freemode_01"> Homme </option>
           <option value="mp_f_freemode_01"> Femme </option>
         </select>
@@ -112,17 +112,13 @@
           <h1> Pilosité </h1>
 
           <h3> Cheveux </h3>
-          <input class="input" type="range" id="hairStyle" min="0" max="72" onchange="changeFace(event)">
+          <input class="input" type="range" id="hairStyle" min="0" max="72" value="0" onchange="changeFace(event)">
 
           <h3> Couleur de Cheveux </h3>
-          <select class="input">
-
-          </select>
+          <input  class="input"  id="hairColor" type="range" min="0" max="63" value="0" class="slider" id="myRange" onchange="changeFace(event)">
 
           <h3> Barbe </h3>
-          <select class="input">
-
-          </select>
+          <input  class="input"  id="beard" type="range" min="0" max="28" value="0" class="slider" id="myRange" onchange="changeFace(event)">
 
           <h3> Couleur de Barbe </h3>
           <select class="input">

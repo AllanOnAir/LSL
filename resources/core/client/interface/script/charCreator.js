@@ -194,12 +194,14 @@ let playerSkin = {
     skinMix: 0,
     // Cheveux 
     hairStyle: 0,
+    hairColor: 0,
     collection: "",
     overlay: "",
     // Details
     eyeColor: 0,
-    sourcils: 0,
-    sourcilsColor: 0,
+    eyebrow: 0,
+    eyebrowColor: 0,
+    beard: 0,
 }
 
 
@@ -231,6 +233,7 @@ function changeFace(event){
 
     // Hair Style and head overlay
     playerSkin.hairStyle = parseInt(document.getElementById("hairStyle").value)
+    playerSkin.hairColor = parseInt(document.getElementById("hairColor").value)
 
 // -------------------------------------------NEED TO ADD HAIRCOLOR HERE !!!!-----------------------------------------------------
 
@@ -244,14 +247,14 @@ function changeFace(event){
     }
 
 // -------------------------------------------NEED TO ADD BEARD HERE !!!!-----------------------------------------------------
-
+    playerSkin.beard = parseInt(document.getElementById("beard").value)
 
     
 
 
     // eyebrow ( color and Shape )
-    playerSkin.sourcils = parseInt(document.getElementById("eyebrow").value)
-    playerSkin.sourcilsColor = parseInt(document.getElementById("eyebrowColor").value)
+    playerSkin.eyebrow = parseInt(document.getElementById("eyebrow").value)
+    playerSkin.eyebrowColor = parseInt(document.getElementById("eyebrowColor").value)
 
     // EyeColor
     playerSkin.eyeColor = parseInt(document.getElementById("eyeColor").value)

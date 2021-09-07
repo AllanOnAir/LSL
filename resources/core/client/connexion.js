@@ -51,7 +51,7 @@ function creationDePersonnage(){
         createPedEditCamera();
         setFov(50);
         setZPos(0.6);
-    },1200);
+    },1500);
 
     
     native.setPedHeadBlendData(alt.Player.local, 0, 0, 0, 0, 0, 0, 0, 0, 0, false);
@@ -79,15 +79,21 @@ function creationDePersonnage(){
         );
         // Hair Style
         native.setPedComponentVariation(alt.Player.local, 2, playerSkin.hairStyle, 0, 0);
+
 // -------------------------------------------NEED TO ADD HAIRCOLOR HERE !!!!-----------------------------------------------------
         native.addPedDecorationFromHashes(alt.Player.local, native.getHashKey(playerSkin.collection),  native.getHashKey(playerSkin.overlay));
+        native.setPedHairColor(alt.Player.local, playerSkin.hairColor, playerSkin.hairColor);
 
 
 
 // -------------------------------------------NEED TO ADD BEARD HERE !!!!-----------------------------------------------------
+
+        native.setPedHeadOverlay(alt.Player.local, 1, playerSkin.beard, 1);
+        native.setPedHeadOverlayColor(alt.Player.local, 1, 2, playerSkin.Haircolor, playerSkin.hairColor);
+
         // EyeBrow
         native.setPedHeadOverlay(alt.Player.local, 2, playerSkin.sourcils, 1);
-        native.setPedHeadOverlayColor(alt.Player.local, 2,1, playerSkin.sourcilsColor, playerSkin.sourcilsColor)
+        native.setPedHeadOverlayColor(alt.Player.local, 2,1, playerSkin.eyebrowColor, playerSkin.eyebrowColor)
 
     
 
