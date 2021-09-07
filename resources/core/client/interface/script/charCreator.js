@@ -170,8 +170,8 @@ const HairOverlaysFemale = {
     }
 };
 
-// Skin Color Mix You want to create ! i suggest to comment the name of the skin tone. ( skinID are parent face https://gtaforums.com/topic/858970-all-gtao-face-ids-pedset_ped_head_blend_data-explained/) 
-colorMix = {
+// Skin Tone Mix You want to create ! i suggest to comment the name of the skin tone. ( skinID are parent face https://gtaforums.com/topic/858970-all-gtao-face-ids-pedset_ped_head_blend_data-explained/) 
+SkinToneMix = {
     1: { skinFirstID: 0, skinSecondID: 0, skinMix: 0},
     2: { skinFirstID: 19, skinSecondID: 4, skinMix: 0},
     3: { skinFirstID: 23, skinSecondID: 34, skinMix: 0},
@@ -204,14 +204,14 @@ let playerSkin = {
 
 
 
-let sexe = "mp_m_freemode_01"
+let sex = "mp_m_freemode_01"
 
 
 function changeSexe(event){
     // Get sex selected and send it trought client then server to change the ped of the character
-    sexe = document.getElementById("sexePicking").options[document.getElementById("sexePicking").selectedIndex].value
+    sex = document.getElementById("sexPicking").options[document.getElementById("sexPicking").selectedIndex].value
     if("alt" in window) {
-        alt.emit("changeSex", sexe)
+        alt.emit("changeSex", sex)
     }
 
 }
@@ -225,9 +225,9 @@ function changeFace(event){
     
     // Skin Color ( color mix can be created at line 175)
     let valeur = document.getElementById("SkinColor").value
-    playerSkin.skinFirstID = colorMix[valeur].skinFirstID
-    playerSkin.skinSecondID =  colorMix[valeur].skinSecondID
-    playerSkin.skinMix =  colorMix[valeur].skinMix
+    playerSkin.skinFirstID = SkinToneMix[valeur].skinFirstID
+    playerSkin.skinSecondID =  SkinToneMix[valeur].skinSecondID
+    playerSkin.skinMix =  SkinToneMix[valeur].skinMix
 
     // Hair Style and head overlay
     playerSkin.hairStyle = parseInt(document.getElementById("hairStyle").value)
@@ -250,8 +250,8 @@ function changeFace(event){
 
 
     // eyebrow ( color and Shape )
-    playerSkin.sourcils = parseInt(document.getElementById("sourcils").value)
-    playerSkin.sourcilsColor = parseInt(document.getElementById("sourcilsColor").value)
+    playerSkin.sourcils = parseInt(document.getElementById("eyebrow").value)
+    playerSkin.sourcilsColor = parseInt(document.getElementById("eyebrowColor").value)
 
     // EyeColor
     playerSkin.eyeColor = parseInt(document.getElementById("eyeColor").value)

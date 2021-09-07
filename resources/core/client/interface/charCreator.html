@@ -8,7 +8,7 @@
         <!-- Next page -->
         <button  class="arrowBTN" id="back"><img src="./src/next.png" id="nextIMG" onclick="lastPage()"></button>
         <button  class="arrowBTN" id="next"><img src="./src/next.png" id="nextIMG" onclick="nextPage()"></button>
-      <div class="contentZone" id="1">
+        <div class="contentZone" id="1">
         <h1> IDENTIFICATION </h1>
 
         <h3> Prénom </h3>
@@ -27,12 +27,12 @@
           <option value="mp_f_freemode_01"> Femme </option>
         </select>
 
-      </div>
+        </div>
 
-    <div class="contentZone" id="2">
-      <h1> Visage </h1>
-      <h3> Père </h3>
-      <select class="input" id="dad" onchange="changeFace(event)">
+        <div class="contentZone" id="2">
+          <h1> Visage </h1>
+          <h3> Père </h3>
+          <select class="input" id="dad" onchange="changeFace(event)">
         <option value="0"> Edan </option>
         <option value="1"> Bob </option>
         <option value="2"> Edan </option>
@@ -57,10 +57,10 @@
         <option value="42"> Rasnov </option>
         <option value="43"> Nico </option>
         <option value="44"> Martin </option>
-      </select>
+          </select>
 
-      <h3> Mère </h3>
-      <select class="input" id="mom" onchange="changeFace(event)">
+          <h3> Mère </h3>
+          <select class="input" id="mom" onchange="changeFace(event)">
         <option value="21"> Edan </option>
         <option value="22"> Bob </option>
         <option value="23"> Edan </option>
@@ -84,15 +84,15 @@
         <option value="41"> Bob </option>
         <option value="45"> Rasnov </option>
 
-      </select>
+          </select>
 
-      <h3> Héritage </h3>
-      <input  class="input"  id="sliderHeritage" type="range" min="0" max="200" value="10" class="slider" id="myRange" onchange="changeFace(event)">
+          <h3> Héritage </h3>
+          <input  class="input"  id="sliderHeritage" type="range" min="0" max="200" value="10" class="slider" id="myRange" onchange="changeFace(event)">
 
 
 
-      <h3> Couleur de peau </h3>
-      <select class="input" id="SkinColor"onchange="changeFace(event)">
+          <h3> Couleur de peau </h3>
+          <select class="input" id="SkinColor"onchange="changeFace(event)">
         <option value="1"> Caucasien 01 </option>
         <option value="2"> Caucasien 02 </option>
         <option value="3"> Caucasien 03 </option>
@@ -103,75 +103,66 @@
         <option value="8"> Espanique 02 </option>
         <option value="9"> Espanique 03 </option>
         <option value="10"> Asiatique 01 </option>
-      </select>
+          </select>
 
-    </div>      
-      
-
-    <div class="contentZone" id="3">
-      <h1> Pilosité </h1>
-
-      <h3> Cheveux </h3>
-      <input class="input" type="range" id="hairStyle" min="0" max="72" onchange="changeFace(event)">
-
-      <h3> Couleur de Cheveux </h3>
-      <select class="input">
-
-      </select>
-
-      <h3> Barbe </h3>
-      <select class="input">
-
-      </select>
-
-      <h3> Couleur de Barbe </h3>
-      <select class="input">
-
-      </select>
-    </div>
-
-    <div class="contentZone" id="4">
-      <h1> Détailes </h1>
-
-      <h3> Couleur des yeux </h3>
-      <input id="eyeColor" type="range" min="0" max="15" class="input" onchange="changeFace()">
-
-      <h3> Sourcils </h3>
-      <input class="input" type="range" id="sourcils" min="0" max="33" onchange="changeFace(event)">
-
-      <h3> Couleur des Sourcils </h3>
-      <input class="input" type="range" id="sourcilsColor" min="0" max="64" onchange="changeFace(event)">
-
-      <h3> Vêtements de départ </h3>
-      <input  class="input"  id="startingClothes" type="range" min="1" max="5" value="50" class="slider" id="myRange">
-
-      </input>
-    </div>
-      
-
-    <div class="contentZone" id="5">
-        <h1> Vérification </h1>
+        </div>      
 
 
-        <div id="data">
-          <h3> nom : <span></span> <span></span> </h3>
+        <div class="contentZone" id="3">
+          <h1> Pilosité </h1>
 
+          <h3> Cheveux </h3>
+          <input class="input" type="range" id="hairStyle" min="0" max="72" onchange="changeFace(event)">
 
-          <h3> Âge : <span></span></h3>
+          <h3> Couleur de Cheveux </h3>
+          <select class="input">
 
-          <h3> Sexe : <span></span></h3>
+          </select>
 
+          <h3> Barbe </h3>
+          <select class="input">
+
+          </select>
+
+          <h3> Couleur de Barbe </h3>
+          <select class="input">
+
+          </select>
         </div>
-    </div>
-      
-      
-      
-      
-      
-      
-    
-      
 
+        <div class="contentZone" id="4">
+          <h1> Détailes </h1>
+
+          <h3> Couleur des yeux </h3>
+          <input id="eyeColor" type="range" min="0" max="15" class="input" onchange="changeFace()">
+
+          <h3> Sourcils </h3>
+          <input class="input" type="range" id="eyebrow" min="0" max="33" onchange="changeFace(event)">
+
+          <h3> Couleur des Sourcils </h3>
+          <input class="input" type="range" id="eyebrowColor" min="0" max="64" onchange="changeFace(event)">
+
+          <h3> Vêtements de départ </h3>
+          <input  class="input"  id="startingClothes" type="range" min="1" max="5" value="50" class="slider" id="myRange">
+
+          </input>
+        </div>
+
+
+        <div class="contentZone" id="5">
+            <h1> Vérification </h1>
+
+
+            <div id="data">
+              <h3> nom : <span></span> <span></span> </h3>
+
+
+              <h3> Âge : <span></span></h3>
+
+              <h3> Sexe : <span></span></h3>
+
+            </div>
+        </div>
     </div>
 
   </body>
