@@ -10,8 +10,15 @@ var playerdata = {
     prenom:"",
     nomFamille:"",
     sexe:"",
-    apparance:[]
+    apparance: undefined,
+    clothes: undefined,
 }
+
+
+
+
+
+
 
 alt.on("getdata", dataName =>{
     let data = playerdata[dataName]

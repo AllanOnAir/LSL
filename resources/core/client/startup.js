@@ -6,3 +6,4 @@ import * as native from 'natives';
 import "./connexion"
 import "./data"
 import "./weather"
+import "./commande"
