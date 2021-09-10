@@ -1,21 +1,21 @@
 /// <reference types="@altv/types-server" />
 import * as alt from 'alt-server';
 // Weather
-let currentWeather = 'THUNDER'
+let currentWeather = 'SUNNY'
 const weathers = [
     'SUNNY',
     'EXTRASUNNY', 
     'CLEAR', 
-    'NEUTRAL', 
-    'SMOG', 
-    'FOGGY', 
-    'OVERCAST', 
-    'CLOUDS', 
-    'CLEARING', 
-    'RAIN', 
-    'THUNDER', 
-  //  'SNOW', 
-    'BLIZZARD', 
+    //'NEUTRAL', 
+    //'SMOG', 
+    //'FOGGY', 
+    //'OVERCAST', 
+    //'CLOUDS', 
+    //'CLEARING', 
+    //'RAIN', 
+    //'THUNDER', 
+    //'SNOW', 
+    //'BLIZZARD', 
    // 'SNOWLIGHT', 
    // 'XMAS', 
    // 'HALLOWEEN',
