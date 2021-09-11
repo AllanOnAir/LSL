@@ -52,7 +52,7 @@ export function changeCurrentTime(hour, minute, second) {
     time.hour = hour;
     time.minute = minute;
     time.second = second;
-    console.log(`[AWTS] Changed time to ${hour}:${minute}:${second}`)
+    console.log(`l'heure actuel => ${hour}:${minute}:${second}`)
     alt.Player.all.forEach(player => {
         alt.emitClient(player, 'syncTime', time, msperminute);
     });
@@ -72,7 +72,7 @@ setInterval(() => { // Change to random weather every 10 minutes
 
 // Time
 setInterval(() => { // Update time every 2 minutes
-    console.log(`[AWTS] Syncing time...`)
+    //console.log(` -- Synchronisation du temps -- `)
     alt.Player.all.forEach(player => {
         alt.emitClient(player, 'syncTime', time, msperminute);
     });

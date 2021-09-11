@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  transition: 2s;
+  background: rgba(0, 0, 0, 0.438);
+}
+
+#content {
+  background-color: #202731;
+  border-radius: 30px;
+  height: 100px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-content: center;
+}
+
+#content > button {
+  margin-top: 12.5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+#content > button:hover {
+  transition: 0.3s;
+  border-color: #202731;
+  background-color: #da4167;
+  transform: translateY(4px);
+  cursor: pointer;
+}
+
+#content > button > img {
+  width: 65px;
+  opacity: 0.5;
+}

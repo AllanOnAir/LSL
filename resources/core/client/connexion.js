@@ -115,6 +115,7 @@ function creationDePersonnage(){
         alt.toggleGameControls(true);
         destroyPedEditCamera();
         alt.showCursor(false);
+        alt.emit("connected", isConnected)
     })
 
 }
