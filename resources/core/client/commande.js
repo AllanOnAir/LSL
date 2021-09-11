@@ -7,7 +7,7 @@ let connected = false
 
 
 alt.on("connected", status => {
-    console.log("le joueur es connecté ")
+    // console.log("le joueur es connecté ")
     connected = true
 })
 

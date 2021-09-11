@@ -1,18 +1,18 @@
-[12:37:30] alt:V Server 5.3 (release)
-[12:37:30] Starting LSL DEV on localhost:7788
-[12:37:30] Loading resource core
-[12:37:31] Loaded resource core
-[12:37:31] Required server permissions:
-[12:37:31] Optional server permissions:
-[12:37:31] Starting HTTP server on localhost:7788
-[12:37:31] Main thread started (ThreadId: 16152)
-[12:37:31] VoiceStreamer thread started (ThreadId: 12768)
-[12:37:31] VoicePacketProcess thread started (ThreadId: 21076)
-[12:37:31] Colshape thread started (ThreadId: 5216)
-[12:37:31] EntityStreamer thread started (ThreadId: 7556)
-[12:37:31] Network thread started (ThreadId: 5832)
-[12:37:31] Console thread started (ThreadId: 384)
-[12:37:31] Server started
-[12:41:59] Stopping resource core
-[12:41:59] Stopped resource core
-[12:41:59] Server shutdown
+[12:48:56] alt:V Server 5.3 (release)
+[12:48:56] Starting LSL DEV on localhost:7788
+[12:48:56] Loading resource core
+[12:48:57] Loaded resource core
+[12:48:57] Required server permissions:
+[12:48:57] Optional server permissions:
+[12:48:57] Starting HTTP server on localhost:7788
+[12:48:57] Main thread started (ThreadId: 19564)
+[12:48:57] VoicePacketProcess thread started (ThreadId: 10076)
+[12:48:57] Colshape thread started (ThreadId: 7228)
+[12:48:57] VoiceStreamer thread started (ThreadId: 10128)
+[12:48:57] EntityStreamer thread started (ThreadId: 8840)
+[12:48:57] Network thread started (ThreadId: 14308)
+[12:48:57] Console thread started (ThreadId: 3496)
+[12:48:57] Server started
+[12:49:12] Stopping resource core
+[12:49:12] Stopped resource core
+[12:49:13] Server shutdown

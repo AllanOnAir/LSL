@@ -28,7 +28,7 @@ function userConnected(){
     alt.emit("getdata", "prenom")
     alt.on("takedata", data =>{
         prenom = data
-        alt.log(data)
+        // alt.log(data)
     });
 
     if (prenom == "" || prenom == undefined){
