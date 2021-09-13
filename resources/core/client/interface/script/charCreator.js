@@ -246,7 +246,7 @@ function changeFace(event){
         playerSkin.overlay = HairOverlaysFemale[document.getElementById("hairStyle").value].overlay
     }
 
-// -------------------------------------------NEED TO ADD BEARD HERE !!!!-----------------------------------------------------
+    // Beard
     playerSkin.beard = parseInt(document.getElementById("beard").value)
     playerSkin.beardColor = parseInt(document.getElementById("beardColor").value)
     playerSkin.beardOpacity = parseInt(document.getElementById("beardOpacity").value)/100
@@ -301,4 +301,3 @@ function compilation() {
         alt.emit('characterCreated')
     }
 }
-

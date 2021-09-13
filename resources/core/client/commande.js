@@ -1,8 +1,15 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 
+
+// WebView
 let menu
-let menuIsOpen = false
+
+
+
+
+
+
 let connected = false
 
 
@@ -49,5 +56,26 @@ function checkmenu() {
         }
     
     }
+
+    menu.on("openInventory", msg => {
+        menu.destroy()
+        alt.log("ouvre l'inventaire")
+        menu = new alt.WebView("http://resource/client/interface/inventaire.html")
+        menu.focus()
+
+
+    })
+
+
+
+
+
+
+
+
+
+
 }
+
+
 
