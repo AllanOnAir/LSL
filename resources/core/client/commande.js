@@ -52,29 +52,15 @@ function checkmenu() {
             alt.showCursor(false)
             alt.toggleGameControls(true);
             menu = undefined
-        
         }
-    
     }
-
+// -------------------------------------------------------------------------------- Inventaire --------------------------------------------------------------------------------
     menu.on("openInventory", msg => {
         menu.destroy()
         alt.log("ouvre l'inventaire")
         menu = new alt.WebView("http://resource/client/interface/inventaire.html")
         menu.focus()
-
-
     })
-
-
-
-
-
-
-
-
-
-
 }
 
 

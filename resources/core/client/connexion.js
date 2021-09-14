@@ -2,8 +2,8 @@
 /// <reference types="@altv/types-natives" />
 import * as alt from 'alt-client';
 import * as native from 'natives';
-import * as playerData from "./data"
-import { createPedEditCamera, destroyPedEditCamera, setFov, setZPos } from './camera';
+import * as playerData from "./data/data"
+import { createPedEditCamera, destroyPedEditCamera, setFov, setZPos } from './global/camera';
 
 let isConnected = false
 let request = false
@@ -32,7 +32,7 @@ function userConnected(){
     });
 
     if (prenom == "" || prenom == undefined){
-        creationDePersonnage()
+        characterCreation()
     }
     else{
         alt.showCursor(false);
@@ -41,7 +41,7 @@ function userConnected(){
     }
 }
 
-function creationDePersonnage(){
+function characterCreation(){
     alt.emitServer('charCreation', player)
 
     charCreator = new alt.WebView("http://resource/client/interface/charCreator.html");

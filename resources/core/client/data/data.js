@@ -3,7 +3,7 @@
 import * as alt from 'alt-client';
 import * as native from 'natives';
 
-
+// ---------------------------------------- PlayerData ----------------------------------------
 
 var playerdata = {
     id:"",
@@ -14,11 +14,19 @@ var playerdata = {
     clothes: undefined,
 }
 
+var invClothes = [ [] , []]
+
+var invWallet = {
+
+}
+
+var invOthers = {
+
+}
 
 
 
-
-
+// ---------------------------------------- Commands ----------------------------------------
 
 alt.on("getdata", dataName =>{
     let data = playerdata[dataName]
