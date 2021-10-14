@@ -1,39 +1,15 @@
 {
   "type": "module",
-  "name": "LSL",
+  "name": "lsl6.4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/allandufour/LSL.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/allandufour/LSL/issues"
-  },
-  "homepage": "https://github.com/allandufour/LSL#readme",
-  "devDependencies": {
-    "@altv/types-client": "^1.8.3",
-    "@altv/types-natives": "^1.4.2",
-    "@altv/types-server": "^2.0.2",
-    "@altv/types-shared": "^1.0.4",
-    "@altv/types-webview": "^1.0.2"
-  },
   "dependencies": {
-    "axios": "^0.21.1",
-    "cors": "^2.8.5",
-    "discord.js": "^13.1.0",
-    "dotenv": "^10.0.0",
-    "elliptic": "^6.5.4",
-    "express": "^4.17.1",
-    "mongodb": "^4.0.1",
-    "simplymongo": "^2.1.1",
-    "sjcl": "^1.0.8"
+    "simplymongo": "^2.1.2"
   }
 }

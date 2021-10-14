@@ -18,6 +18,22 @@ alt.onServer("connexion", player =>{
     connexion.on("userConnected", userConnected)
     alt.showCursor(true);
     alt.toggleGameControls(false);
+
+
+
+    // cayo perico
+
+    let blip = native.addBlipForCoord(5943.5679611650485, -6272.114833599767,2); // a invisible blip to make the map clickable at the island
+    native.setBlipSprite(blip, 407);
+    native.setBlipScale(blip, 0);
+    native.setBlipAsShortRange(blip, false);
+
+    native.setIslandHopperEnabled('HeistIsland', true);
+    native.setScenarioGroupEnabled('Heist_Island_Peds', true);
+    native.setAudioFlag("PlayerOnDLCHeist4Island", true);
+    native.setAmbientZoneListStatePersistent("AZL_DLC_Hei4_Island_Zones", true, true);
+    native.setAmbientZoneListStatePersistent("AZL_DLC_Hei4_Island_Disabled_Zones", false, true);
+
 });
 
 function userConnected(){
