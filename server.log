@@ -1,13 +1,16 @@
-[22:24:03] alt:V Server 6.4 (release)
-[22:24:03] Starting alt:V Server on 0.0.0.0:7788
-[22:24:03] Loading resource core
-[22:24:04] Loaded resource core
-[22:24:04] Required server permissions:
-[22:24:04] Optional server permissions:
-[22:24:04] Starting HTTP server on 0.0.0.0:7788
-[22:24:04] Main thread started (ThreadId: 19168)
-[22:24:04] Colshape thread started (ThreadId: 12884)
-[22:24:04] EntityStreamer thread started (ThreadId: 13596)
-[22:24:04] Network thread started (ThreadId: 12208)
-[22:24:04] Console thread started (ThreadId: 17000)
-[22:24:04] Server started
+[23:05:37] alt:V Server 6.4 (release)
+[23:05:38] Starting alt:V Server on 0.0.0.0:7788
+[23:05:38] Loading resource core
+[23:05:38] Loaded resource core
+[23:05:38] Required server permissions:
+[23:05:38] Optional server permissions:
+[23:05:38] Starting HTTP server on 0.0.0.0:7788
+[23:05:38] Main thread started (ThreadId: 2932)
+[23:05:38] Colshape thread started (ThreadId: 3256)
+[23:05:38] EntityStreamer thread started (ThreadId: 7924)
+[23:05:38] Network thread started (ThreadId: 17680)
+[23:05:38] Console thread started (ThreadId: 19640)
+[23:05:38] Server started
+[23:15:35] Stopping resource core
+[23:15:35] Stopped resource core
+[23:15:36] Server shutdown

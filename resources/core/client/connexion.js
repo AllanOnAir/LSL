@@ -27,13 +27,6 @@ alt.onServer("connexion", player =>{
     native.setBlipSprite(blip, 407);
     native.setBlipScale(blip, 0);
     native.setBlipAsShortRange(blip, false);
-
-    native.setIslandHopperEnabled('HeistIsland', true);
-    native.setScenarioGroupEnabled('Heist_Island_Peds', true);
-    native.setAudioFlag("PlayerOnDLCHeist4Island", true);
-    native.setAmbientZoneListStatePersistent("AZL_DLC_Hei4_Island_Zones", true, true);
-    native.setAmbientZoneListStatePersistent("AZL_DLC_Hei4_Island_Disabled_Zones", false, true);
-
 });
 
 function userConnected(){
